@@ -1,0 +1,29 @@
+/**
+ * @author Samuel Vergara Martín
+ */
+public class ActividadRefuerzo4 {
+    public static void main(String[]  args) {
+        int numero[],cuadrado[],cubo[];
+
+        numero = reserva();
+        cuadrado = reserva();
+        cubo = reserva();
+
+
+    }
+    static int[] reserva() {
+        int t[] = new int[20];
+        return t;
+    }
+    static int[] insert(int t[], String name) {
+        int resultado[] = new int[20];
+        switch (name) {
+            case "numero": {
+                for(int i = 0)
+            }
+        }
+
+        int resolve[] = new int[10];
+        return resolve;
+    }
+}
