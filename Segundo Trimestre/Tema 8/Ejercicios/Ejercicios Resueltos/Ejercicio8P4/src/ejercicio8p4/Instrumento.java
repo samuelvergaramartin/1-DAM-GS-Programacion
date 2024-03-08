@@ -5,11 +5,11 @@ package ejercicio8p4;
  * @author Samuel Vergara Martín
  */
 public abstract class Instrumento {
-    protected Notas[] melodia;
+    protected Nota[] melodia;
     public Instrumento() {
-        melodia = new Notas[0];
+        melodia = new Nota[0];
     }
-    void add(Notas nota) {
+    void add(Nota nota) {
         melodia = java.util.Arrays.copyOf(melodia, melodia.length +1);
         melodia[melodia.length - 1] = nota;
     }
