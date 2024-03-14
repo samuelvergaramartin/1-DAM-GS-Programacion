@@ -79,17 +79,14 @@ public class Lista {
         if(position < 0) System.out.println(CYAN + -1);
         else System.out.println(CYAN + position);
     }
-    
-    boolean equals(Lista lista) {
-        try {
-            boolean iguales;
-            iguales = Arrays.equals(this.tabla, lista.tabla);
-            return iguales;
-        }
-        catch (ArrayIndexOutOfBoundsException exception) {
-            System.out.println(RED + "Error: La longitud de ambos arrays son distintas entre si.");
-            return false;
-        }
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Lista)) return false;
+        
+        Lista lista = (Lista) obj;
+        if(this.tabla.length != lista.tabla.length) return false;
+        boolean result = Arrays.equals(this.tabla, lista.tabla);
+        return result;
     }
     
     @Override
