@@ -80,12 +80,11 @@ public class Lista {
         else System.out.println(CYAN + position);
     }
     
-    boolean equals(Lista lista, Object algo) {
+    boolean equals(Lista lista) {
         try {
-            String test = "";
-            boolean te = algo.getClass().equals(test.getClass());
-            System.out.println(te);
-            return false;
+            boolean iguales;
+            iguales = Arrays.equals(this.tabla, lista.tabla);
+            return iguales;
         }
         catch (ArrayIndexOutOfBoundsException exception) {
             System.out.println(RED + "Error: La longitud de ambos arrays son distintas entre si.");

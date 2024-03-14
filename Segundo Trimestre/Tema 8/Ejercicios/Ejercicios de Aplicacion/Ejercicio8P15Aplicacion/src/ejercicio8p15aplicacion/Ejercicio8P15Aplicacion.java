@@ -1,4 +1,5 @@
 package ejercicio8p15aplicacion;
+import static netcat_utils.Colors.CYAN;
 
 /**
  *
@@ -11,9 +12,18 @@ public class Ejercicio8P15Aplicacion {
      */
     public static void main(String[] args) {
         String algo = "algo";
-        boolean test;
+        boolean sonIguales;
+        int result;
         Lista lista = new Lista();
-        test = lista.equals(lista, 2);
+        sonIguales = lista.equals(lista);
+        if(sonIguales) result = 1;
+        else result = 0;
+        switch(result) {
+            case 1: System.out.println(CYAN + "Ambas listas son iguales");
+            break;
+            case 0: System.out.println(CYAN + "Ambas listas no son iguales");
+            break;
+        }
     }
     
 }
