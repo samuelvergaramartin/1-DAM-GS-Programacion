@@ -1,4 +1,4 @@
-package ejercicio8p15aplicacion;
+package ejercicio8p16aplicacion;
 import java.util.Arrays;
 import static netcat_utils.Colors.CYAN;
 import static netcat_utils.Colors.RED;
@@ -9,15 +9,15 @@ import static netcat_utils.Colors.RED;
 public class Lista {
     private Integer[] tabla;
     
-    Lista() {
+    protected Lista() {
         this.tabla = new Integer[0];
     }
     
-    int getTotalElementos() {
+    protected int getTotalElementos() {
         return this.tabla.length;
     }
     
-    void setNumberToEndList(Integer numero) {
+    protected void setNumberToEndList(Integer numero) {
         Integer resolve[] = new Integer[this.tabla.length + 1];
         System.arraycopy(this.tabla, 0, resolve, 0, resolve.length -1);
         this.tabla = null;
@@ -27,7 +27,7 @@ public class Lista {
         this.tabla[tabla.length - 1] = numero;
     }
     
-    void setNumberToStartList(Integer numero) {
+    protected void setNumberToStartList(Integer numero) {
         int oldLengthTable = this.tabla.length;
         Integer resolve[] = new Integer[this.tabla.length + 1];
         System.arraycopy(this.tabla, 0, resolve, 0, resolve.length -1);
@@ -44,11 +44,11 @@ public class Lista {
         this.tabla[0] = numero;
     }
     
-    void insertNumberToListByIndex(Integer numero, int index) {
+    protected void insertNumberToListByIndex(Integer numero, int index) {
         this.tabla[index] = numero;
     }
     
-    void insertOtherTableToEndList(Integer[] otherTable) {
+    protected void insertOtherTableToEndList(Integer[] otherTable) {
         int position = this.tabla.length;
         Integer resolve[] = new Integer[this.tabla.length + otherTable.length];
         System.arraycopy(this.tabla, 0, resolve, 0, position);
@@ -59,15 +59,15 @@ public class Lista {
         System.arraycopy(otherTable, 0, this.tabla, position, this.tabla.length - 2);
     }
     
-    void deleteElementForTableByIndex(int index) {
+    protected void deleteElementForTableByIndex(int index) {
         this.tabla[index] = null;
     }
     
-    Integer getElementFromTableByIndex(int index) {
+    protected Integer getElementFromTableByIndex(int index) {
         return this.tabla[index];
     }
     
-    void searchElementInTable(Integer element) {
+    protected void searchElementInTable(Integer element) {
         int position = -1;
         boolean control = false;
         for(int i = 0; i < this.tabla.length; i++) {
@@ -84,11 +84,8 @@ public class Lista {
         if(!(obj instanceof Lista)) return false;
         
         Lista lista = (Lista) obj;
-        /*if(this.tabla.length != lista.tabla.length) return false;
-        boolean result = Arrays.equals(this.tabla, lista.tabla);*/
-        
-        boolean result = (this.tabla.length == lista.tabla.length) && Arrays.equals(this.tabla, lista.tabla);
-        
+        if(this.tabla.length != lista.tabla.length) return false;
+        boolean result = Arrays.equals(this.tabla, lista.tabla);
         return result;
     }
     
