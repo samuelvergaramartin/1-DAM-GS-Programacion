@@ -23,7 +23,8 @@ public class Clase {
         else {
             boolean areNumbers = esNumero(a) && esNumero(b);
             if(areNumbers) {
-                System.out.println(CYAN + "a + b = " + a + b + RESET);
+                int n1 = (int) a, n2 = (int) b;
+                System.out.println(CYAN + n1 + " + " + n2 + " = " + (n1 + n2) +  RESET);
                 return true;
             }
             else {
