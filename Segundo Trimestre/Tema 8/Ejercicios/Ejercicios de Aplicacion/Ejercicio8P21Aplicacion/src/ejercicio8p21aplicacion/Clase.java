@@ -24,6 +24,11 @@ public class Clase {
             boolean areNumbers = esNumero(a) && esNumero(b);
             if(areNumbers) {
                 System.out.println(CYAN + "a + b = " + a + b + RESET);
+                return true;
+            }
+            else {
+                System.out.println("No sumables");
+                return false;
             }
         }
     }
