@@ -1,5 +1,4 @@
 package actividad9p1;
-
 /**
  *
  * @author Samuel Vergara Martín
