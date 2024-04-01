@@ -84,11 +84,11 @@ public class Lista implements Cola{
     }
     
     @Override
-    public void encolar(Integer n) {
+    public void apilar(Integer n) {
         setNumberToEndList(n);
     }
     @Override
-    public Integer desencolar() {
+    public Integer desapilar() {
         Integer numeroDesencolado = getElementFromTableByIndex(0);
         deleteElementForTableByIndex(0);
         return numeroDesencolado;
