@@ -10,6 +10,8 @@ public class Ejercicio8P22Aplicacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Objeto objeto = new Objeto();
+        System.out.println(objeto.n);
         
     }
     
