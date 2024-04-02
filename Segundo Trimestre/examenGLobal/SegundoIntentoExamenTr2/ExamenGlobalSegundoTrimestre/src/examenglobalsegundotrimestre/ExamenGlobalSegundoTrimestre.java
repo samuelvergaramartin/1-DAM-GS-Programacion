@@ -36,13 +36,11 @@ public class ExamenGlobalSegundoTrimestre {
                 case 2: {
                     ejercito1.attack();
                     ejercitoDerrotado = ejercito1.ejercitoDerrotado();
-                    System.out.println(ejercito1.toString());
                 }
                 break;
                 case 3: {
                     ejercito2.attack();
                     ejercitoDerrotado = ejercito2.ejercitoDerrotado();
-                    System.out.println(ejercito2.toString());
                 }
                 break;
             }

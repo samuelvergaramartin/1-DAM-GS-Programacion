@@ -73,6 +73,7 @@ public class Ejercito {
                 if(vidaActual < valueAttack) jefeEjercito.setVida(0);
                 else jefeEjercito.setVida(vidaActual - valueAttack);
             }
+            System.out.println(toString());
         }
     }
     
