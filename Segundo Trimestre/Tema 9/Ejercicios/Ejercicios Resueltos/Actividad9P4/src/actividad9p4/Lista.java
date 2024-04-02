@@ -5,7 +5,7 @@ import static netcat_utils.Colors.CYAN;
  *
  * @author Samuel Vergara Martín
  */
-public class Lista implements Cola{
+public class Lista implements Cola, Pila{
     private Integer[] tabla;
     
     Lista() {
