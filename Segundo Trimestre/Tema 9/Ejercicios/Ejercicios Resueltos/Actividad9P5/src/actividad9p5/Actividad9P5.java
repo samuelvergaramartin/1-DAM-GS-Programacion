@@ -10,12 +10,13 @@ public class Actividad9P5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cola cola = new Cola() {
-            Lista lista = new Lista();
-            @Override
-            public void encolar() {
+        //Cola cola = new Cola() {
+            //Lista lista = new Lista();
+            //@Override
+            //public void encolar() {
                 
-            }
+            //}
+            System.out.println("Hola mundo! Esto es una prueba!");
         }
     }
     

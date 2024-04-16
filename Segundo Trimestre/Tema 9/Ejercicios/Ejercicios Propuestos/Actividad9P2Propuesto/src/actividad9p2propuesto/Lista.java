@@ -5,7 +5,7 @@ import static netcat_utils.Colors.CYAN;
  *
  * @author Samuel Vergara Martín
  */
-public class Lista implements Cola, Pila{
+public class Lista implements Cola, Pila, ColaDoble{
     private Integer[] tabla;
     
     Lista() {
@@ -83,6 +83,25 @@ public class Lista implements Cola, Pila{
         System.out.println(CYAN + Arrays.toString(this.tabla));
     }
     
+    private Integer getElementPosition(Integer element) {
+        int position = -1;
+        boolean control = false;
+        for(int i = 0; i < this.tabla.length; i++) {
+            if(this.tabla[i] == element && control == false) {
+                control = true;
+                position = i;
+            }
+        }
+        return position;
+    }
+    
+    private void eliminar(Integer n) {
+        int position = getElementPosition(n);
+        Integer num = null;
+        
+        
+    }
+    
     @Override
     public void apilar(Integer n) {
         setNumberToEndList(n);
@@ -91,6 +110,16 @@ public class Lista implements Cola, Pila{
     public Integer desapilar() {
         Integer numeroDesencolado = getElementFromTableByIndex(0);
         deleteElementForTableByIndex(0);
+        return numeroDesencolado;
+    }
+    @Override
+    public void EncolarCabeza(Integer n) {
+        setNumberToStartList(n);
+    }
+    @Override
+    public Integer desencolarFinal() {
+        Integer numeroDesencolado = getElementFromTableByIndex(tabla.length - 1);
+        deleteElementForTableByIndex(tabla.length - 1);
         return numeroDesencolado;
     }
 }
