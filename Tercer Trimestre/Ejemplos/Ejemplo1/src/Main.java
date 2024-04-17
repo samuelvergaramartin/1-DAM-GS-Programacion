@@ -1,23 +1,24 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int a, b, res;
-        a = 5;
-        b = 0;
+        int edad;
+        Scanner sc  = new Scanner(System.in);
+
+
 
         try {
-            System.out.println(dividir(a,b));
+            System.out.println("Introduce tu edad: ");
+            edad = sc.nextInt();
+            if(edad < 0) {
+                throw new ExcepcionNegativa();
+            }
+            else {
+                System.out.println(edad);
+            }
         }
-        catch(Exception ex) {
-            System.out.println(ex.getMessage());
-            return;
+        catch (ExcepcionNegativa ex) {
+            System.out.println(ex);
         }
-        finally {
-            System.out.println("Cerrando recursos...");
-        }
-
-        System.out.println("Fin del programa");
-    }
-    static int dividir(int a , int b) {
-        return a / b;
     }
 }
