@@ -7,12 +7,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc;
         String algo = null, texto = "";
-        String cadena = "1 2 3 4";
+        String cadena = "hola adios otro";
 
         sc = new Scanner(cadena);
         while(sc.hasNext()) {
             algo = sc.next();
-            texto += algo;
+            texto += algo + " ";
         }
 
         System.out.println(texto);
