@@ -10,16 +10,23 @@ public class Main {
 
         try {
             in = new FileInputStream("Enteros.txt");
-        }
-        catch(IOException ex) {
-            System.out.println(ex);
-        }
-        finally {
             sc = new Scanner(in);
             while(sc.hasNext()) {
                 num = sc.nextInt();
                 suma += num;
                 contador++;
+            }
+        }
+        catch(IOException ex) {
+            System.out.println(ex);
+        }
+        finally {
+            if(in != null) {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
             }
         }
         System.out.println("Suma: " + suma);
