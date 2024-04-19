@@ -1,17 +1,18 @@
-import java.io.FileInputStream;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        FileInputStream in = null;
+        BufferedReader in = null;
         int suma = 0, num, contador = 0;
         Scanner sc;
 
         try {
-            in = new FileInputStream("Enteros.txt");
+            in = new BufferedReader(new FileReader("Enteros.txt"));
             sc = new Scanner(in);
-            while(sc.hasNext()) {
+            while(sc.hasNextInt()) {
                 num = sc.nextInt();
                 suma += num;
                 contador++;
