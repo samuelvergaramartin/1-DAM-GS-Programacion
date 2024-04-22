@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio6P11/Ejercicio6P11.iml" filepath="$PROJECT_DIR$/Ejercicio6P11/Ejercicio6P11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio6P11Aplicacion/Ejercicio6P11Aplicacion.iml" filepath="$PROJECT_DIR$/Ejercicio6P11Aplicacion/Ejercicio6P11Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicio6P14/Ejercicio6P14.iml" filepath="$PROJECT_DIR$/Ejercicio6P14/Ejercicio6P14.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicio6P15/Ejercicio6P15.iml" filepath="$PROJECT_DIR$/Ejercicio6P15/Ejercicio6P15.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Repaso David S.T (2).iml" filepath="$PROJECT_DIR$/.idea/Repaso David S.T (2).iml" />
