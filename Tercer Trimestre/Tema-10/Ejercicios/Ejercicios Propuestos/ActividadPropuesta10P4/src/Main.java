@@ -7,20 +7,19 @@ public class Main {
     public static void main(String[] args) {
         BufferedWriter out = null;
         Scanner sc = new Scanner(System.in);
-        String cadena = "", input;
-
-        do {
-            System.out.print("Introduce una palabra: ");
-            input = sc.next();
-            if(!input.equals("fin")) cadena+= input;
-        }
-        while(!input.equals("fin"));
+        String input;
 
         try {
             out = new BufferedWriter(new FileWriter("ejerciciopropuesto10p4.txt"));
-            for(int i = 0; i < cadena.length(); i++) {
-                out.write(cadena.charAt(i));
+            do {
+                System.out.print("Introduzca una frase: ");
+                input = sc.nextLine();
+                if(!input.equals("fin")) {
+                    out.write(input);
+                    out.newLine();
+                }
             }
+            while(!input.equals("fin"));
         }
         catch (IOException exception) {
             System.out.println(exception);
