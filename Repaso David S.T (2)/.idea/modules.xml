@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio11P1/Ejercicio11P1.iml" filepath="$PROJECT_DIR$/Ejercicio11P1/Ejercicio11P1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio11P3/Ejercicio11P3.iml" filepath="$PROJECT_DIR$/Ejercicio11P3/Ejercicio11P3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio12P1/Ejercicio12P1.iml" filepath="$PROJECT_DIR$/Ejercicio12P1/Ejercicio12P1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio12P1Aplicacion/Ejercicio12P1Aplicacion.iml" filepath="$PROJECT_DIR$/Ejercicio12P1Aplicacion/Ejercicio12P1Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio12P2/Ejercicio12P2.iml" filepath="$PROJECT_DIR$/Ejercicio12P2/Ejercicio12P2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio12P3/Ejercicio12P3.iml" filepath="$PROJECT_DIR$/Ejercicio12P3/Ejercicio12P3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio12P4/Ejercicio12P4.iml" filepath="$PROJECT_DIR$/Ejercicio12P4/Ejercicio12P4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicio6P11/Ejercicio6P11.iml" filepath="$PROJECT_DIR$/Ejercicio6P11/Ejercicio6P11.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicio6P11Aplicacion/Ejercicio6P11Aplicacion.iml" filepath="$PROJECT_DIR$/Ejercicio6P11Aplicacion/Ejercicio6P11Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicio6P12Aplicacion/Ejercicio6P12Aplicacion.iml" filepath="$PROJECT_DIR$/Ejercicio6P12Aplicacion/Ejercicio6P12Aplicacion.iml" />
