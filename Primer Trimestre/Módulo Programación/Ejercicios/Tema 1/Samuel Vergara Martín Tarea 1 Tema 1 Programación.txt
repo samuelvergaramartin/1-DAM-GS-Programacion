@@ -1,7 +1,0 @@
-Nombre de una persona: username, user, member
-Número: n, number, x
-Edad: age, edad, x
-Precio: price, precio, x
-Cantidad: c, cantidad, x
-Contador: counter, contador, i
-Teléfono: nPhone, n, nTelefono
