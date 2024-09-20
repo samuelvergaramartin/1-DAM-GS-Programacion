@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P10/Actividad1P10.iml" filepath="$PROJECT_DIR$/Actividad1P10/Actividad1P10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P11Resuelta/Actividad1P11Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P11Resuelta/Actividad1P11Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P12Resuelta/Actividad1P12Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P12Resuelta/Actividad1P12Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P13Resuelta/Actividad1P13Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P13Resuelta/Actividad1P13Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P14Resuelta/Actividad1P14Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P14Resuelta/Actividad1P14Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad1P3Resuelta/Actividad1P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P3Resuelta/Actividad1P3Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad1P4Resuelta/Actividad1P4Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P4Resuelta/Actividad1P4Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad1P6Resuelta/Actividad1P6Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P6Resuelta/Actividad1P6Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P7Resuelta/Actividad1P7Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P7Resuelta/Actividad1P7Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P8Resuelta/Actividad1P8Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P8Resuelta/Actividad1P8Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P9Resuelta/Actividad1P9Resuelta.iml" filepath="$PROJECT_DIR$/Actividad1P9Resuelta/Actividad1P9Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
     </modules>
   </component>

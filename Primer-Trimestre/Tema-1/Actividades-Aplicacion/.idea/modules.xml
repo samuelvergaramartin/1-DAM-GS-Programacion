@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P11Aplicacion/Actividad1P11Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P11Aplicacion/Actividad1P11Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P12Aplicacion/Actividad1P12Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P12Aplicacion/Actividad1P12Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P13Aplicacion/Actividad1P13Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P13Aplicacion/Actividad1P13Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P14Aplicacion/Actividad1P14Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P14Aplicacion/Actividad1P14Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P15Aplicacion/Actividad1P15Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P15Aplicacion/Actividad1P15Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad1P16Aplicacion/Actividad1P16Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad1P16Aplicacion/Actividad1P16Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Aplicacion.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Aplicacion.iml" />
+    </modules>
+  </component>
+</project>
