@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int edadActual,edadProxima;
+        int edad;
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduzca su edad: ");
 
-        edadActual = sc.nextInt();
+        edad = sc.nextInt();
 
-        edadProxima = ++edadActual;
+        edad++;
 
-        System.out.println("Dentro de un año tendrás " + edadProxima + " años");
+        System.out.println("Dentro de un año tendrás " + edad + " años");
     }
 }
