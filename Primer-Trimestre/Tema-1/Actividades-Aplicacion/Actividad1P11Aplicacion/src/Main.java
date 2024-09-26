@@ -12,7 +12,7 @@ public class Main {
         System.out.print("Introduzca la base imponible: ");
         base = sc.nextDouble();
 
-        IVA = base * 0.21;
+        IVA = base * porcentajeIva;
 
         total = base * (1 + porcentajeIva);
 
