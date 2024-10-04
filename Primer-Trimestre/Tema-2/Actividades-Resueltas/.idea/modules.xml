@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P10Resuelta/Actividad2P10Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P10Resuelta/Actividad2P10Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P11Resuelta/Actividad2P11Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P11Resuelta/Actividad2P11Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P12Resuelta/Actividad2P12Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P12Resuelta/Actividad2P12Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P13Resuelta/Actividad2P13Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P13Resuelta/Actividad2P13Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad2P1Resuelta/Actividad2P1Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P1Resuelta/Actividad2P1Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P2Resuelta/Actividad2P2Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P2Resuelta/Actividad2P2Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P3Resuelta/Actividad2P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P3Resuelta/Actividad2P3Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P5Resuelta/Actividad2P5Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P5Resuelta/Actividad2P5Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P6Resuelta/Actividad2P6Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P6Resuelta/Actividad2P6Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P7Resuelta/Actividad2P7Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P7Resuelta/Actividad2P7Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P8Resuelta/Actividad2P8Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P8Resuelta/Actividad2P8Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2P9Resuelta/Actividad2P9Resuelta.iml" filepath="$PROJECT_DIR$/Actividad2P9Resuelta/Actividad2P9Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad3P4Resuelta/Actividad3P4Resuelta.iml" filepath="$PROJECT_DIR$/Actividad3P4Resuelta/Actividad3P4Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
     </modules>
   </component>

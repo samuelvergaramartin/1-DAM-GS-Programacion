@@ -3,13 +3,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int num, a = 5, b;
-        char c;
-        boolean verdad;
-        String cadena;
+        int hora;
+        Scanner sc = new Scanner(System.in);
 
-        cadena = (a<2) ? "verdadero" : "falso";
+        System.out.print("Introduce la hora: ");
+        hora = sc.nextInt();
 
-        System.out.println(cadena);
+        if(hora <=12) {
+            System.out.println("Buenos dias");
+            System.out.println("¿Qué tal?");
+        }
+
+        System.out.println("Vamos a trabajar");
     }
 }
