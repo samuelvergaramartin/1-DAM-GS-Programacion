@@ -12,29 +12,13 @@ public class Main {
 
         if(switchType == 1) {
             switch (num) {
-                case 1: result = "Invierno";
+                case 12,1,2 : result = "Invierno";
                 break;
-                case 2: result = "Invierno";
+                case 3,4,5: result = "Primavera";
                 break;
-                case 3: result = "Primavera";
+                case 6,7,8: result = "Verano";
                 break;
-                case 4: result = "Primavera";
-                break;
-                case 5: result = "Primavera";
-                break;
-                case 6: result = "Verano";
-                break;
-                case 7: result = "Verano";
-                break;
-                case 8: result = "Agosto";
-                break;
-                case 9: result = "Septiembre";
-                break;
-                case 10: result = "Octubre";
-                break;
-                case 11: result = "Noviembre";
-                break;
-                case 12: result = "Diciembre";
+                case 9,10,11: result = "Otoño";
                 break;
                 default: result = "Error: Numero inválido";
                 break;
@@ -42,19 +26,11 @@ public class Main {
         }
         else {
             switch (num) {
-                case 1 -> result = "Enero";
-                case 2 -> result = "Febrero";
-                case 3 -> result = "Marzo";
-                case 4 -> result = "Abril";
-                case 5 -> result = "Mayo";
-                case 6 -> result = "Junio";
-                case 7 -> result = "Julio";
-                case 8 -> result = "Agosto";
-                case 9 -> result = "Septiembre";
-                case 10 -> result = "Octubre";
-                case 11 -> result = "Noviembre";
-                case 12 -> result = "Diciembre";
-                default -> result = "Error: Número inválido";
+                case 12,1,2 -> result = "Invierno";
+                case 3,4,5 -> result = "Primavera";
+                case 6,7,8 -> result = "Verano";
+                case 9,10,11 -> result = "Otoño";
+                default -> result = "Error: Numero inválido";
             }
         }
 
