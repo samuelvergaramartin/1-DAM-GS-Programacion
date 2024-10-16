@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        final int switchType = 1;
         int num;
         String result = "El juego más jugado es: ";
         Scanner sc = new Scanner(System.in);
