@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Introduzca su número de DNI sin letra: ");
         num = sc.nextInt();
 
-        resto = num % 22;
+        resto = num % 23;
 
         switch (resto) {
             case 0: letra = 'T';
