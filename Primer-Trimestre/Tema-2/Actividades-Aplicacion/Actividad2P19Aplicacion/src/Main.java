@@ -13,7 +13,7 @@ public class Main {
 
         if(grados > 360) grados %= 360;
 
-        radianes = (360.0 / Math.PI) * grados;
+        radianes = (Math.PI / 180.0) * grados;
 
         System.out.println(radianes);
     }
