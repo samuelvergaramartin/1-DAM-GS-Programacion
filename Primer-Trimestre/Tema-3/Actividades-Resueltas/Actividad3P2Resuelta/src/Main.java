@@ -13,7 +13,7 @@ public class Main {
             sumaEdades+= edad;
             numAlumnos++;
             if(edad >= 18) mayoresDeEdad++;
-            mediaEdades = sumaEdades / numAlumnos;
+            mediaEdades = (double) sumaEdades / numAlumnos;
 
             System.out.print("Introduzca la edad del alumno: ");
             edad = sc.nextInt();
