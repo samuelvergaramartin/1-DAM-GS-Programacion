@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad1Bucles/Actividad1Bucles.iml" filepath="$PROJECT_DIR$/Actividad1Bucles/Actividad1Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad2Bucles/Actividad2Bucles.iml" filepath="$PROJECT_DIR$/Actividad2Bucles/Actividad2Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad3Bucles/Actividad3Bucles.iml" filepath="$PROJECT_DIR$/Actividad3Bucles/Actividad3Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad4Bucles/Actividad4Bucles.iml" filepath="$PROJECT_DIR$/Actividad4Bucles/Actividad4Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad5Bucles/Actividad5Bucles.iml" filepath="$PROJECT_DIR$/Actividad5Bucles/Actividad5Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad6Bucles/Actividad6Bucles.iml" filepath="$PROJECT_DIR$/Actividad6Bucles/Actividad6Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad7Bucles/Actividad7Bucles.iml" filepath="$PROJECT_DIR$/Actividad7Bucles/Actividad7Bucles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Bucles.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Bucles.iml" />
+    </modules>
+  </component>
+</project>
