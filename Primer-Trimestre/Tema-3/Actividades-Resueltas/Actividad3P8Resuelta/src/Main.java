@@ -15,8 +15,10 @@ public class Main {
 
             total += num;
 
-            if(i == 10) media = total / 10.0;
+
         }
+
+        media = total / 10.0;
 
         System.out.println("La media es: " + media);
     }
