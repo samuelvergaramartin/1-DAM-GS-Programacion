@@ -3,54 +3,25 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double num, temp, temp2;
-        int cifras = 1, carrito1;
+        int num, resto, result = 0;
         Scanner sc = new Scanner(System.in);
 
-        sc.useLocale(Locale.US);
-
-        System.out.print("Introduce un número: ");
-        num = sc.nextDouble();
-
-        temp = num;
-
-        //Mi idea con este bucle es primero obtener el número de cifras del número introducido
         do {
-            temp/=10;
-            cifras++;
+            System.out.print("Introduce un numero positivo: ");
+            num = sc.nextInt();
         }
-        while ((int) temp/10 != 0);
+        while (num <= 0);
 
-        temp = num;
 
-        //Ahora , aquí mi idea aquí es poder desgranar ese número con el número de cifras obtenido para mostrarlo
-        for (int i = cifras; i >= 1; i--) {
-            carrito1 = (int) Math.pow(10, i-1);
-            temp = num / carrito1;
-            System.out.println((int) temp);
-        }
+        while(num>0){
+            resto = num%10;
 
-        System.out.println("---------");
+            result*=10;
+            result+=resto;
 
-        temp = num;
-
-        for (int i = cifras; i >= 1; i--) {
-            carrito1 = (int) Math.pow(10, i-1);
-            //System.out.println(carrito1);
-            temp = num % carrito1;
-            System.out.println((int) temp);
+            num/= 10;
         }
 
-        System.out.println("------------");
-
-        temp = num;
-        temp2 = num;
-
-        for (int i = cifras; i >= 1; i--) {
-            carrito1 = (int) Math.pow(10, i-1);
-            //System.out.println(carrito1);
-            temp = (num / carrito1) / 10;
-            System.out.println((int) temp);
-        }
+        System.out.println(result);
     }
 }
