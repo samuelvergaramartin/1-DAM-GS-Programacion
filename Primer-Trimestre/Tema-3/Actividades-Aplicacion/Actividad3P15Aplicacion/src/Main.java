@@ -14,6 +14,7 @@ public class Main {
                 else {
                     pos1 = i;
                     pos2 = j;
+                    System.out.print(pos1+pos2);
                 }
             }
             System.out.println();
