@@ -8,6 +8,6 @@ public class Main {
         System.out.print("Introduce un número: ");
         num = sc.nextInt();
 
-        
+
     }
 }
