@@ -7,11 +7,15 @@ public class Main {
 
         System.out.print("Introduce un número: ");
         num = sc.nextInt();
-
+        //Revisar en casa
         for(int i = 1; i <= num; i++) {
             contador = 0;
             for(int j = 1; j <= i; j++) {
-                if(i%j == 0) contador++;
+                if(i%j == 0) {
+                    contador++;
+                    System.out.println(j + "--> Primo");
+                }
+                else System.out.println(j + "--> No primo");
             }
             if(contador <= 2) primos++;
         }
