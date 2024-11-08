@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad10Refuerzo/Actividad10Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad10Refuerzo/Actividad10Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad1Refuerzo/Actividad1Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad1Refuerzo/Actividad1Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad24Refuerzo/Actividad24Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad24Refuerzo/Actividad24Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad2Refuerzo/Actividad2Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad2Refuerzo/Actividad2Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad31Refuerzo/Actividad31Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad31Refuerzo/Actividad31Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad33Refuerzo/Actividad33Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad33Refuerzo/Actividad33Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad35Refuerzo/Actividad35Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad35Refuerzo/Actividad35Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad3Refuerzo/Actividad3Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad3Refuerzo/Actividad3Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad4Refuerzo/Actividad4Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad4Refuerzo/Actividad4Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad5Refuerzo/Actividad5Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad5Refuerzo/Actividad5Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad6Refuerzo/Actividad6Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad6Refuerzo/Actividad6Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7Refuerzo/Actividad7Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad7Refuerzo/Actividad7Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8Refuerzo/Actividad8Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad8Refuerzo/Actividad8Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad9Refuerzo/Actividad9Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad9Refuerzo/Actividad9Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" />
     </modules>
   </component>
