@@ -14,10 +14,13 @@ public class Main {
         //Bucle de control de la altura de la X
         for(int i = 1; i <= altura; i++) {
 
-            for(int j = 1; j <= i; j++) {
+            for(int x = 1; x<= altura; x+=2) {
+                System.out.print("* ");
+            }
+            /*for(int j = 1; j <= i; j++) {
                 if(j < i) System.out.print(" ");
                 else System.out.print("*");
-            }
+            }*/
 
             System.out.println();
         }
