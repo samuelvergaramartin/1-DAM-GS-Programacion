@@ -19,7 +19,7 @@ public class Main {
             System.out.print("Seleccione una opción (1 - Área, 2 - Volumen): ");
             opcion = sc.nextInt();
         }
-        while (opcion != 1 && opcion != 2);
+        while (opcion != 1 && opcion != 2);//Sistema anti-usuarios tontos
 
         if(opcion == 1) resultado = area(altura, radio);
         else resultado = volumen(altura, radio);
