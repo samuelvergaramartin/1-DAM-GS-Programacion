@@ -16,7 +16,9 @@ public class Main {
         return sc.nextInt();
     }
     private static void mostrarEnteros(int num1, int num2) {
-        for(int i = num1; i <= num2; i++) {
+        int mayor = Math.max(num1, num2), menor = Math.min(num1, num2);
+
+        for(int i = menor; i <= mayor; i++) {
             System.out.println(i);
         }
     }
