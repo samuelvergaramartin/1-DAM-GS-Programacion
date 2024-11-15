@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad4P1Resuelta/Actividad4P1Resuelta.iml" filepath="$PROJECT_DIR$/Actividad4P1Resuelta/Actividad4P1Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad4P2Resuelta/Actividad4P2Resuelta.iml" filepath="$PROJECT_DIR$/Actividad4P2Resuelta/Actividad4P2Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad4P3Resuelta/Actividad4P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad4P3Resuelta/Actividad4P3Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad4P4Resuelta/Actividad4P4Resuelta.iml" filepath="$PROJECT_DIR$/Actividad4P4Resuelta/Actividad4P4Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad4P5Resuelta/Actividad4P5Resuelta.iml" filepath="$PROJECT_DIR$/Actividad4P5Resuelta/Actividad4P5Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
+    </modules>
+  </component>
+</project>
