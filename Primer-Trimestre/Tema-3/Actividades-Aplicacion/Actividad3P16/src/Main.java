@@ -11,7 +11,7 @@ public class Main {
         //Bucle que controla el numero de filas
         for(int i = 1; i <= num; i++) {
 
-            //Pinta tantos espacios como filas - 1
+            //Pinta espacios
             for(int j = 1; j <= num-i; j++) {
                 System.out.print(" ");
 
