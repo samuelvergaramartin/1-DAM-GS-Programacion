@@ -25,16 +25,7 @@ public class Main {
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
         }
-        while (
-                switch (opcion) {
-                    case 1,2,3,4-> {
-                        yield false;
-                    }
-                    default -> {
-                        yield true;
-                    }
-                }
-        );
+        while ();
     }
 
     private static double calculadora(double num1, double num2, int opcion) {

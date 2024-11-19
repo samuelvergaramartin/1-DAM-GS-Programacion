@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int altura;
+        int altura, base;
         Scanner sc = new Scanner(System.in);
 
         do {
@@ -19,14 +19,18 @@ public class Main {
                 System.out.print(" ");
             }
 
-            for(int x = 1; x <= i; x++) {
-                if(i == 1) System.out.print(x);
-                else {
-                    int centro = x;
-                    int limit= x -1;
-                    System.out.print(x);
-                    if(x == i) System.out.print(x);
-                }
+            //Dibujar izquierda más el medio
+            for(int x = i; x >= 1; x--) {
+                base = x +2;
+                if(base >= 10) base-=10;
+                System.out.print(base);
+            }
+
+            //Dibujar derecha
+            for(int x = 2; x <= i; x++) {
+                base = x +2;
+                if(base >= 10) base-=10;
+                System.out.print(base);
             }
 
             System.out.println();

@@ -21,7 +21,7 @@ public class Main {
             }
             //Bucle para dibujar los numeros
             medio = i;
-            if(medio <= 1) {
+            if(medio == 1) {
                 for (int x = 1; x <= i; x++) {
                     System.out.print(x);
                 }
