@@ -24,11 +24,37 @@ public class Main {
                     4- Dividir""");
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
+
+            if(opcion == 4 && num2 == 0) System.out.println("Error: La operacion no se puede realizar, no se puede dividir entre 0");
+            else {
+                resultado = calculadora(num1, num2, opcion);
+                System.out.println(resultado);
+            }
+
         }
-        while ();
+        while (opcion < 1 || opcion > 4);
     }
 
     private static double calculadora(double num1, double num2, int opcion) {
-        return 0.0;
+        double resultado = 0;
+        switch (opcion) {
+            case 1: {
+                resultado = num1+num2;
+                break;
+            }
+            case 2: {
+                resultado = num1 - num2;
+                break;
+            }
+            case 3: {
+                resultado = num1 * num2;
+                break;
+            }
+            case 4: {
+                resultado = num1 / num2;
+                break;
+            }
+        }
+        return resultado;
     }
 }
