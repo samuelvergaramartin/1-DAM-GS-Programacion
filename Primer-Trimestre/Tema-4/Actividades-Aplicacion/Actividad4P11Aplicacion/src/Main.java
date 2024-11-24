@@ -8,15 +8,14 @@ public class Main {
 
         sc.useLocale(Locale.US);
 
-        System.out.print("Introduzca el radio: ");
-        radio = sc.nextInt();
+        System.out.print("Introduzca el valor del radio: ");
+        radio = sc.nextDouble();
 
         superficieRes = superficie(radio);
         volumenRes = volumen(radio);
 
         System.out.println("Superficie: " + superficieRes);
-        System.out.println("Volumen: " +  volumenRes);
-
+        System.out.println("Volumen: " + volumenRes);
     }
 
     private static double superficie(double radio) {
@@ -24,6 +23,6 @@ public class Main {
     }
 
     private static double volumen(double radio) {
-        return (((4*Math.PI)/3)* Math.pow(radio, 3));
+        return (((4*Math.PI)/3)*Math.pow(radio, 3));
     }
 }
