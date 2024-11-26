@@ -15,8 +15,8 @@ public class Main {
     }
 
     private static void muestraPares(int n) {
-        for(int i = 0; i <= n; i++) {
-            if(i % 2 == 0) System.out.println(i);
+        for(int i = 2; i <= 2*n; i+=2) {
+            System.out.println(i);
         }
     }
 }
