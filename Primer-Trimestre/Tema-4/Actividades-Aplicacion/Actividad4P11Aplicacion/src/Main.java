@@ -14,8 +14,12 @@ public class Main {
         superficieRes = superficie(radio);
         volumenRes = volumen(radio);
 
-        System.out.println("Superficie: " + superficieRes);
-        System.out.println("Volumen: " + volumenRes);
+        mostrar(superficieRes, volumenRes);
+    }
+
+    private static void mostrar(double superficie, double volumen) {
+        System.out.println("Superficie: " + superficie);
+        System.out.println("Volumen: " + volumen);
     }
 
     private static double superficie(double radio) {
