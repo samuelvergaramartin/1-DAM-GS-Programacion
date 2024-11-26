@@ -25,10 +25,40 @@ public class Main {
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
         }
-        while ();
+        while (opcion < 1 || opcion > 4);
+
+        if(opcion == 4 && num2 == 0) System.out.println("Error: No se puede realizar la operacion. No se puede dividir entre 0.");
+        else {
+            resultado = calculadora(num1, num2, opcion);
+            System.out.println(resultado);
+        }
     }
 
     private static double calculadora(double num1, double num2, int opcion) {
-        return 0.0;
+        double resultado;
+
+        switch (opcion) {
+            case 1: {
+                resultado = num1 + num2;
+                break;
+            }
+            case 2: {
+                resultado = num1 - num2;
+                break;
+            }
+            case 3: {
+                resultado = num1 * num2;
+                break;
+            }
+            case 4: {
+                resultado = num1 / num2;
+                break;
+            }
+            default: {
+                resultado = 0;
+                break;
+            }
+        }
+        return resultado;
     }
 }
