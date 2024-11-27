@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(pegaPorDetras(17,19));
+        System.out.println(trozoDeNumero(1234, 2, 3));
     }
 
     private static boolean esCapicua(int num) {
@@ -141,17 +141,22 @@ public class Main {
 
     private static int pegaPorDetras(int numero, int numeroAPegar) {
         return Integer.parseInt(numero+""+numeroAPegar);
-//        int digitosAAgregar = digitos(numeroAPegar);
-//        numero*= (int) Math.pow(10, digitosAAgregar);
-//        numero+= numeroAPegar;
-//        return numero;
     }
 
     private static int pegaPorDelante(int numero, int numeroAPegar) {
         return Integer.parseInt(numeroAPegar+""+numero);
-//        int digitosAAgregar = digitos(numeroAPegar);
-//        numero*= (int) Math.pow(10, digitosAAgregar);
-//        numero+= numeroAPegar;
-//        return numero;
+    }
+
+    private static int trozoDeNumero(int num, int posInicial, int posFinal) {
+        int digitos = digitos(num), resultado;
+
+        if(posInicial < 1 || posFinal > digitos) resultado = -1;
+        else {
+            resultado = quitaPorDelante(num, posInicial);
+            System.out.println(resultado);
+            resultado = quitaPorDetras(resultado, posFinal);
+        }
+
+        return resultado;
     }
 }
