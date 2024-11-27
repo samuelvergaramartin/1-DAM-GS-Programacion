@@ -29,7 +29,7 @@ public class Main {
             if(num2 % i == 0) suma2+= i;
         }
 
-        if(suma1 == suma2) return true;
+        if(suma1 == num2 && suma2 == num1) return true;
         else return false;
     }
 }
