@@ -147,6 +147,7 @@ public class Main {
         return Integer.parseInt(numeroAPegar+""+numero);
     }
 
+    //Revisar luego
     private static int trozoDeNumero(int num, int posInicial, int posFinal) {
         int digitos = digitos(num), resultado;
 
@@ -158,5 +159,9 @@ public class Main {
         }
 
         return resultado;
+    }
+
+    private static int juntaNumeros(int num1, int num2) {
+        return pegaPorDetras(num1, num2);
     }
 }
