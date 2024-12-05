@@ -10,6 +10,6 @@ public class Main {
             total+= e;
         }
 
-        System.out.println("El total es: " + total);q
+        System.out.println("El total es: " + total);
     }
 }
