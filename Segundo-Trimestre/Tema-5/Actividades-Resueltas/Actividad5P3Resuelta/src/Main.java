@@ -13,15 +13,15 @@ public class Main {
 
         numeros = new int[totalNumeros];
 
-        for(int i = totalNumeros - 1; i>= 0; i--) {
+        for(int i = 0; i < numeros.length; i++) {
             System.out.print("Introduce un número: ");
             numeros[i] = sc.nextInt();
         }
 
         System.out.println("Mostrando numeros en orden inverso...");
 
-        for(int e : numeros) {
-            System.out.println(e);
+        for(int i = numeros.length -1 ; i >= 0; i--) {
+            System.out.println(numeros[i]);
         }
     }
 }
