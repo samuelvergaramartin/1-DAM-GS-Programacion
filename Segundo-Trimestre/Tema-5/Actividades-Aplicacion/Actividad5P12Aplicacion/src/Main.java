@@ -14,6 +14,15 @@ public class Main {
     }
 
     private static void desordenar(int t[]) {
-        
+        int[] resultado = new int[t.length];
+        int pos;
+
+        for(int i = 0; i < t.length; i++) {
+            do {
+                pos = (int) ((Math.random() * t.length));
+                if(resultado[i] == 0)
+            }
+            while (resultado[i] != 0);
+        }
     }
 }
