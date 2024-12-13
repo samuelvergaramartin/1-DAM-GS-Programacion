@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int numeros[] = new int[100], numero1, numero2;
+        String numeritos[] = new String[100];
         Scanner sc = new Scanner(System.in);
 
-        rellenarArray(numeros);
+        rellenarArray(numeros, numeritos);
 
         mostrarArray(numeros);
 
@@ -15,14 +16,15 @@ public class Main {
         System.out.print("Introduzca el segundo número: ");
         numero2 = sc.nextInt();
 
-        cambiarPor(numeros, numero1, numero2);
+        cambiarPor(numeritos, numero1, numero2);
 
-        mostrarArray(numeros);
+        mostrarArray(numeritos);
     }
 
-    private static void rellenarArray(int numeros[]) {
+    private static void rellenarArray(int numeros[], String numeritos[]) {
         for(int i = 0; i < numeros.length; i++) {
             numeros[i] = (int) ((Math.random() * 20));
+            numeritos[i] = numeros[i] + "";
         }
     }
 
@@ -34,9 +36,17 @@ public class Main {
         System.out.println();
     }
 
-    private static void cambiarPor(int numeros[], int numero1, int numero2) {
-        for(int i = 0; i < numeros.length; i++) {
-            if(numeros[i] == numero1) numeros[i] = numero2;
+    private static void mostrarArray(String numeritos[]) {
+        for(String e: numeritos) {
+            System.out.print(e + " ");
+        }
+
+        System.out.println();
+    }
+
+    private static void cambiarPor(String numeritos[], int numero1, int numero2) {
+        for(int i = 0; i < numeritos.length; i++) {
+            if(numeritos[i].equals(numero1 + "")) numeritos[i] = "'" + numero2 + "'";
         }
     }
 }
