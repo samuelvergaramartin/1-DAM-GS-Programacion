@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         int numeros[] = {1,2,3,4,5,6};
 
-        System.out.println(buscar(numeros, 5));
+        System.out.println(buscar(numeros, 15));
     }
 
     private static int buscar(int t[], int clave) {
