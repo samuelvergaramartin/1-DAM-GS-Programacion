@@ -17,9 +17,13 @@ public class Main {
     }
 
     private static void desordenar(int tabla[]) {
-        int posAleatoria1, temp, temp2;
+        int posAleatoria, temp, temp2, resultado[] = new int[tabla.length];
+        boolean aux[] = new boolean[resultado.length];
 
         for(int i = 0; i < tabla.length; i++) {
+            
+        }
+        /*for(int i = 0; i < tabla.length; i++) {
 
             for(int x = i; x < tabla.length; x++) {
                 do {
@@ -32,24 +36,6 @@ public class Main {
                 tabla[i] = tabla[temp2];
                 tabla[x] = temp;
             }
-        }
+        }*/
     }
-
-    /*private static void desordenar(int t[]) {
-        int[] resultado = new int[t.length];
-
-        int pos;
-
-        for(int i = 0; i < t.length; i++) {
-            do {
-                pos = (int) ((Math.random() * t.length));
-                if(resultado[pos] == 0) {
-                    resultado[pos] = t[i];
-                }
-            }
-            while (resultado[pos] != 0);
-        }
-
-        t = resultado;
-    }*/
 }
