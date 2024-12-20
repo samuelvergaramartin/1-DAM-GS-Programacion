@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Burbuja/Burbuja.iml" filepath="$PROJECT_DIR$/Burbuja/Burbuja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inseccion/Inseccion.iml" filepath="$PROJECT_DIR$/Inseccion/Inseccion.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Metodos-Ordenacion.iml" filepath="$PROJECT_DIR$/.idea/Metodos-Ordenacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seleccion/Seleccion.iml" filepath="$PROJECT_DIR$/Seleccion/Seleccion.iml" />
     </modules>
