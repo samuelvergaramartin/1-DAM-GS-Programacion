@@ -1,5 +1,4 @@
 import static java.util.Arrays.binarySearch;
-import static java.util.Arrays.copyOf;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,15 +9,20 @@ public class Main {
         System.out.println(java.util.Arrays.toString(numeros));
     }
 
-    private static int[] inserccionOrdenada(int num, int t[]) {
-        int pos = (Math.abs(binarySearch(t, num))-1), resultado[] = new int[pos -1], diferencia;
-        System.arraycopy(t, 0, resultado, 0, pos);
-        resultado = copyOf(resultado, resultado.length + 1);
-        resultado[resultado.length - 1] = num;
-        diferencia = t.length - resultado.length;
-        resultado = copyOf(resultado, t.length);
-        System.arraycopy(t, pos, resultado, pos, diferencia);
+    private static int[] inserccionOrdenada(int nuevo, int t[]) {
+        int indiceInsercion = binarySearch(t, nuevo), copia[] = new int[t.length + 1];
 
-        return resultado;
+        if(indiceInsercion < 0) indiceInsercion = Math.abs(indiceInsercion) - 1;
+
+        //Copiamos elementos hasta antes del hueco
+        System.arraycopy(t, 0, copia, 0, indiceInsercion);
+
+        //Copiamos desplazados los elementos tras el hueco
+        System.arraycopy(t, indiceInsercion, copia, indiceInsercion + 1, (t.length - indiceInsercion));
+
+        //asignamos el nuevo elemento
+        copia[indiceInsercion] = nuevo;
+
+        return copia;
     }
 }
