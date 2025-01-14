@@ -11,13 +11,28 @@ public class Main {
     }
 
     private static int[] procesoCalculoNumeroDeLaSuerte(int t[]) {
-        int pos1, pos2, num1, num2;
+        int pos1, pos2, num1, num2, resultado;
 
         if(t.length <= 2) {
             if(t.length == 2) {
-                
+                do {
+                    pos1 = (int) (Math.random() * t.length);
+                    pos2 = (int) (Math.random() * t.length);
+                }
+                while (pos1 == pos2);
             }
         }
+        else {
+            do {
+                pos1 = (int) (Math.random() * t.length);
+                pos2 = (int) (Math.random() * t.length);
+            }
+            while (pos1 == pos2);
+
+
+        }
+
+        return t;
     }
 
     private static int[] obtenerNumerosFavoritos(int t[], Scanner sc) {
