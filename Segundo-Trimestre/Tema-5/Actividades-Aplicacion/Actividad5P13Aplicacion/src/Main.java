@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int numeros[] = new int[5];
+        int numeros[] = new int[5], resultado[] = new int[5];
         Scanner sc = new Scanner(System.in);
 
         for(int i = 0; i < numeros.length; i++) {
@@ -10,23 +10,23 @@ public class Main {
             numeros[i] = sc.nextInt();
         }
 
-        desordenar(numeros);
+        resultado = copiaDesordenada(numeros);
 
         System.out.println(java.util.Arrays.toString(numeros));
+        System.out.println(java.util.Arrays.toString(resultado));
     }
 
-    private static void desordenar(int tabla[]) {
-        int aux[] = new int[tabla.length], contador = 0, posicion;
+    private static int[] copiaDesordenada(int tabla[]) {
+        int copia[] = new int[tabla.length],aux[] = new int[tabla.length], contador = 0, posicion;
         boolean pos[] = new boolean[aux.length];
 
         for(int i = 0; i < tabla.length; i++) {
             aux[i] = tabla[i];
-            tabla[i] = 0;
         }
 
         posicion = (int) (Math.random() * aux.length);
 
-        tabla[posicion] = aux[0];
+        copia[posicion] = aux[0];
         pos[posicion] = true;
         contador++;
 
@@ -34,7 +34,7 @@ public class Main {
             posicion = (int) (Math.random() * aux.length);
 
             if(!pos[posicion]) {
-                tabla[posicion] = aux[contador];
+                copia[posicion] = aux[contador];
                 pos[posicion] = true;
                 contador++;
             }
@@ -42,5 +42,7 @@ public class Main {
 
         aux = null;
         pos = null;
+
+        return copia;
     }
 }

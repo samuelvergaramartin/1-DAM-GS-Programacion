@@ -8,10 +8,24 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         numerosFavoritos = obtenerNumerosFavoritos(numerosFavoritos, sc);
+
+        while (numerosFavoritos.length > 1) {
+            numerosFavoritos = procesoCalculoNumeroDeLaSuerte(numerosFavoritos);
+        }
+
+        System.out.print("Tu numero de la suerte es: " + numerosFavoritos[0]);
+    }
+
+    private static int[] inserccionOrdenada(int t[], int elemento) {
+        t = copyOf(t, t.length + 1);
+        t[t.length - 1] = elemento;
+        sort(t);
+
+        return t;
     }
 
     private static int[] procesoCalculoNumeroDeLaSuerte(int t[]) {
-        int pos1, pos2, num1, num2, resultado;
+        int pos1, pos2, resultado;
 
         if(t.length <= 2) {
             if(t.length == 2) {
@@ -20,6 +34,8 @@ public class Main {
                     pos2 = (int) (Math.random() * t.length);
                 }
                 while (pos1 == pos2);
+
+                t = eliminacionOrdenada(t, t[pos2]);
             }
         }
         else {
@@ -29,7 +45,10 @@ public class Main {
             }
             while (pos1 == pos2);
 
-
+            resultado = (int) Math.round((t[pos1] + t[pos2]) / 2.0);
+            t = eliminacionOrdenada(t, t[pos1]);
+            t = eliminacionOrdenada(t, t[pos2]);
+            t = inserccionOrdenada(t, resultado);
         }
 
         return t;
