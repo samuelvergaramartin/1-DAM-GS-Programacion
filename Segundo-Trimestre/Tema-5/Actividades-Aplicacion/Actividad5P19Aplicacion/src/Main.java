@@ -32,6 +32,12 @@ public class Main {
             aux[i] = dorsales[i];
         }
 
+        for(int i = 0; i < aux.length; i++) {
+            if(estaRegistrado(menoresDeEdad, aux[i])) {
+                aux = eliminacion(aux, aux[i]);
+            }
+        }
+
         for(int e : aux) {
             System.out.print("Dorsal '" + e + "': Es  antidopaje?: ");
             if(sc.nextLine().toLowerCase().equals("si")) {
@@ -39,10 +45,55 @@ public class Main {
             }
         }
 
-
-
         adelantarMenores(dorsales, menoresDeEdad);
+
+        for(int i = 0; i < dorsales.length; i++) {
+            if(!estaRegistrado(aux, dorsales[i]) && !estaRegistrado(menoresDeEdad, dorsales[i])) {
+                dorsales = eliminacion(dorsales, dorsales[i]);
+            }
+        }
+
+        aux = copyOf(aux, 0);
+
+        for(int e : dorsales) {
+            System.out.print("Dorsal '" + e + "': Ha pagado la inscripcion?: ");
+            if(sc.nextLine().toLowerCase().equals("no")) {
+                aux = registrarDorsales(aux, e);
+            }
+        }
+
+        dorsales = mandarALasUltimasPosiciones(dorsales, aux);
+        menoresDeEdad = null;
+        aux = null;
+
         System.out.println(java.util.Arrays.toString(dorsales));
+
+    }
+
+    private static int[] mandarALasUltimasPosiciones(int dorsales[], int aux[]) {
+        for(int i = 0; i < dorsales.length; i++) {
+            if(estaRegistrado(aux, dorsales[i])) {
+                dorsales = eliminacion(dorsales, dorsales[i]);
+            }
+        }
+
+        dorsales = copyOf(dorsales, dorsales.length + aux.length);
+        //System.out.println(java.util.Arrays.toString(dorsales));
+        //System.out.println(java.util.Arrays.toString(aux));
+        //return dorsales;
+        System.arraycopy(aux, 0, dorsales, dorsales.length, aux.length);
+
+        return dorsales;
+    }
+
+    private static boolean estaRegistrado(int t[], int elemento) {
+        boolean encontrado = false;
+
+        for(int i = 0; (i < t.length) && !encontrado; i++) {
+            if(t[i] == elemento) encontrado = true;
+        }
+
+        return encontrado;
     }
 
     private static void adelantarMenores(int dorsales[], int menoresDeEdad[]) {
@@ -62,11 +113,8 @@ public class Main {
 
                     }
                     encontrado = true;
-                    eliminacion(menoresDeEdad, menoresDeEdad[x]);
                 }
             }
-
-
         }
     }
 
@@ -86,7 +134,6 @@ public class Main {
 
     private static int[] eliminacion(int t[], int elemento) {
         int posElemento = -1;
-
         for(int i = 0; (i < t.length) && (posElemento == -1); i++) {
             if(t[i] == elemento) posElemento = i;
         }
