@@ -66,7 +66,22 @@ public class Main {
         menoresDeEdad = null;
         aux = null;
 
-        System.out.println(java.util.Arrays.toString(dorsales));
+        for(int i = 0; i < dorsales.length; i++) {
+            switch (i) {
+                case 0: {
+                    System.out.println("La medalla de oro es para: " + dorsales[i]);
+                    break;
+                }
+                case 1: {
+                    System.out.println("La medalla de plata es para: " + dorsales[i]);
+                    break;
+                }
+                case 2: {
+                    System.out.println("La medalla de bronce es para: " + dorsales[i]);
+                    break;
+                }
+            }
+        }
 
     }
 
@@ -78,10 +93,7 @@ public class Main {
         }
 
         dorsales = copyOf(dorsales, dorsales.length + aux.length);
-        //System.out.println(java.util.Arrays.toString(dorsales));
-        //System.out.println(java.util.Arrays.toString(aux));
-        //return dorsales;
-        System.arraycopy(aux, 0, dorsales, dorsales.length, aux.length);
+        System.arraycopy(aux, 0, dorsales, dorsales.length - 1, aux.length);
 
         return dorsales;
     }
