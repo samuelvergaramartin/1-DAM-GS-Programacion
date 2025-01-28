@@ -10,7 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/Ejemplo6/Ejemplo6.iml" filepath="$PROJECT_DIR$/Ejemplo6/Ejemplo6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejemplo7/Ejemplo7.iml" filepath="$PROJECT_DIR$/Ejemplo7/Ejemplo7.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Ejemplos.iml" filepath="$PROJECT_DIR$/.idea/Ejemplos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clavesDeBanco/clavesDeBanco.iml" filepath="$PROJECT_DIR$/clavesDeBanco/clavesDeBanco.iml" />
       <module fileurl="file://$PROJECT_DIR$/comecocos/comecocos.iml" filepath="$PROJECT_DIR$/comecocos/comecocos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paisaje/paisaje.iml" filepath="$PROJECT_DIR$/paisaje/paisaje.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
