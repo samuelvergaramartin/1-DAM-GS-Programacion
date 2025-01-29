@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        for(char c = '\u0000'; c < '\uFFFF'; c++) {
-            System.out.println(c + " -> " + Character.hashCode(c).);
+        for(int c = 0x0000; c < 0xFFFF; c++) {
+            System.out.println((char) c + " -> " + c);
         }
     }
 }
