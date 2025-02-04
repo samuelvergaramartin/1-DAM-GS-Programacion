@@ -16,15 +16,43 @@ public class Main {
     public static String quitarVocalesYAcentos(String cadena[]) {
         String resultado = "";
 
+        quitarVocales(cadena);
+        quitarAcentos(cadena);
+
+        for(String e : cadena) {
+            resultado+= e;
+        }
+
         return resultado;
     }
 
     private static void quitarVocales(String cadena[]) {
-        for(String e : cadena) {
-            if(esVocal(e.toCharArray()[0])) {
-                cadena = e.replace(e, "");
+        for(int i = 0; i < cadena.length; i++) {
+            if(esVocal(cadena[i].toLowerCase().toCharArray()[0])) {
+                cadena[i] = " ";
             }
         }
+    }
+
+    private static void quitarAcentos(String cadena[]) {
+        System.out.println(Arrays.toString(cadena));
+        char algo;
+        for(int i = 0; i < cadena.length; i++) {
+            algo = cadena[i].toLowerCase().toCharArray()[0];
+            if(tieneAcento(algo)) {
+                cadena[i] = "";
+            }
+        }
+    }
+
+    private static boolean tieneAcento(char caracter) {
+        final char[] ACENTOS = {'á', 'é', 'í', 'ó', 'ú'};
+
+        boolean resultado = false;
+
+        if(Arrays.binarySearch(ACENTOS, Character.toLowerCase(caracter)) >= 0) resultado = true;
+
+        return resultado;
     }
 
     private static boolean esVocal(char caracter) {
