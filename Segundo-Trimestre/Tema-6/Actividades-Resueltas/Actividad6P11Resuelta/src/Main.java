@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        final char[] conjunto1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'},
-        conjunto2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
-
         Scanner sc = new Scanner(System.in);
         String palabra;
 
