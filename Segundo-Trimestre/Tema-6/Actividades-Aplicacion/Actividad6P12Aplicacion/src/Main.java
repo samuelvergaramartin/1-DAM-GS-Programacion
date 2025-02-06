@@ -20,13 +20,14 @@ public class Main {
         estadoPalabra = String.copyValueOf(letras);
 
         do {
-            //Revisar esto, porq da fallo al meter una letra bien
             System.out.println(estadoPalabra);
             System.out.print("Jugador 2, adivine una letra de la palabra: ");
             letra = sc.next().charAt(0);
-            if(estaEnElArray(letras, letra)) {
+            if(palabraOriginal.contains(String.valueOf(letra))) {
                 System.out.println("Correcto!");
-                estadoPalabra = actualizarEstadoPalabra(palabraOriginal, letras, letra);
+                if(!estaEnElArray(letras, letra)) {
+                    estadoPalabra = actualizarEstadoPalabra(palabraOriginal, letras, letra);
+                }
             }
             else {
                 System.out.println("Ops...se equivocó");
