@@ -5,7 +5,8 @@ public class Texto {
     private final int longitudMaxima;
     private String cadena = "";
     private int numVocales;
-    private LocalDate fechaCreacion;
+    private final LocalDate fechaCreacion;
+    private LocalDateTime fechaYHoraUltimaModificacion;
 
     public Texto(int longitudMaxima) {
         if(longitudMaxima > 0) this.longitudMaxima = longitudMaxima;
@@ -13,6 +14,8 @@ public class Texto {
             System.out.println("Error: La longitud máxima debe ser mayor que 0");
             this.longitudMaxima = 1;
         }
+
+        fechaCreacion = LocalDate.now();
     }
 
     public void agregarCaracterAlPrincipio(char caracter) {
@@ -22,6 +25,7 @@ public class Texto {
         else {
             cadena = caracter + cadena;
             actualizarNumeroVocales();
+            fechaYHoraUltimaModificacion = LocalDateTime.now();
         }
     }
 
@@ -32,6 +36,7 @@ public class Texto {
         else {
             cadena+= caracter;
             actualizarNumeroVocales();
+            fechaYHoraUltimaModificacion = LocalDateTime.now();
         }
     }
 
@@ -42,6 +47,7 @@ public class Texto {
         else {
             this.cadena = cadena + this.cadena;
             actualizarNumeroVocales();
+            fechaYHoraUltimaModificacion = LocalDateTime.now();
         }
     }
 
@@ -52,6 +58,7 @@ public class Texto {
         else {
             this.cadena+= cadena;
             actualizarNumeroVocales();
+            fechaYHoraUltimaModificacion = LocalDateTime.now();
         }
     }
 
@@ -67,8 +74,26 @@ public class Texto {
         return numVocales;
     }
 
-    public LocalDate getFechaCreacion() {
-        return fechaCreacion;
+    public String getFechaCreacion() {
+        String fecha = "";
+
+        fecha+= fechaCreacion.getDayOfMonth() + "/";
+        fecha+= fechaCreacion.getMonthValue() + "/";
+        fecha+= fechaCreacion.getYear();
+
+        return fecha;
+    }
+
+    public String getFechaYHoraUltimaModificacion() {
+        String resultado = "";
+
+        resultado+= fechaYHoraUltimaModificacion.getDayOfMonth() + "/";
+        resultado+= fechaYHoraUltimaModificacion.getMonthValue() + "/";
+        resultado+= fechaYHoraUltimaModificacion.getYear() + " - ";
+        resultado+= fechaYHoraUltimaModificacion.getHour() + ":";
+        resultado+= fechaYHoraUltimaModificacion.getMinute();
+
+        return resultado;
     }
 
     private boolean esVocal(Character vocal) {
