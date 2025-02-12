@@ -12,5 +12,7 @@ public class Main {
 
         System.out.println("Longitud máxima de la cadena: " + texto.getLongitudMaxima());
         System.out.println("Número de vocales: " + texto.getNumVocales());
+
+        System.out.println(texto.getFechaCreacion().toString());
     }
 }

@@ -1,7 +1,11 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class Texto {
     private final int longitudMaxima;
     private String cadena = "";
     private int numVocales;
+    private LocalDate fechaCreacion;
 
     public Texto(int longitudMaxima) {
         if(longitudMaxima > 0) this.longitudMaxima = longitudMaxima;
@@ -61,6 +65,10 @@ public class Texto {
 
     public int getNumVocales() {
         return numVocales;
+    }
+
+    public LocalDate getFechaCreacion() {
+        return fechaCreacion;
     }
 
     private boolean esVocal(Character vocal) {
