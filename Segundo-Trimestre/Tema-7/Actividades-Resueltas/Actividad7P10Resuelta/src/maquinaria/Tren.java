@@ -60,7 +60,14 @@ public class Tren {
         vagones[vagones.length - 1] = vagon;
     }
 
-    private boolean vagonExiste(int ID) {
+    private boolean vagonExiste(Vagon vagon) {
+        boolean resultado = false;
+        int i = 0;
 
+        while (i < vagones.length && !resultado) {
+            if(vagones[i].equals(vagon)) resultado = true;
+        }
+
+        return resultado;
     }
 }
