@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad7P10Resuelta/Actividad7P10Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P10Resuelta/Actividad7P10Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P1Resuelta/Actividad7P1Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P1Resuelta/Actividad7P1Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P2Resuelta/Actividad7P2Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P2Resuelta/Actividad7P2Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P3Resuelta/Actividad7P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P3Resuelta/Actividad7P3Resuelta.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Actividad7P6Resuelta/Actividad7P6Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P6Resuelta/Actividad7P6Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P7Resuelta/Actividad7P7Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P7Resuelta/Actividad7P7Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P8Resuelta/Actividad7P8Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P8Resuelta/Actividad7P8Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad7P9Resuelta/Actividad7P9Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P9Resuelta/Actividad7P9Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
     </modules>
   </component>
