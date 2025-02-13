@@ -59,4 +59,12 @@ class Vagon {
     public void setTipoMercancia(String tipoMercancia) {
         this.tipoMercancia = tipoMercancia;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        boolean resultado = false;
+        if(((Vagon) obj).getID() == ID) resultado = true;
+
+        return resultado;
+    }
 }
