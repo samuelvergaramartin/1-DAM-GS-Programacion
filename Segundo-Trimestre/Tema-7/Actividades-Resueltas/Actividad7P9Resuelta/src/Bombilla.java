@@ -19,6 +19,10 @@ public class Bombilla {
         return estado;
     }
 
+    public boolean estadoBombilla2() {
+        return estadoInterruptorGeneral && estadoInterruptor;
+    }
+
     public void activarInterruptor() {
         estadoInterruptor = true;
     }
