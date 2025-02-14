@@ -51,7 +51,8 @@ public class Tren {
         if(vagones.length == 5) System.out.println("Error: No se pueden añadir más vagones.");
         else {
             vagon = new Vagon(ID, cargaMaxima, cargaActual, tipoMercancia);
-            meterEnElArray(vagon);
+            if(vagonExiste(vagon)) System.out.println("Error: El vagon ya existe.");
+            else meterEnElArray(vagon);
         }
     }
 
