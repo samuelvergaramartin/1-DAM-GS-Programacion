@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividad-Aplicacion.iml" filepath="$PROJECT_DIR$/.idea/Actividad-Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P11Aplicacion/Actividad7P11Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad7P11Aplicacion/Actividad7P11Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad7P12Aplicacion/Actividad7P12Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad7P12Aplicacion/Actividad7P12Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad7P12Resuelta/Actividad7P12Resuelta.iml" filepath="$PROJECT_DIR$/Actividad7P12Resuelta/Actividad7P12Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad7P13Aplicacion/Actividad7P13Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad7P13Aplicacion/Actividad7P13Aplicacion.iml" />
     </modules>
   </component>
 </project>

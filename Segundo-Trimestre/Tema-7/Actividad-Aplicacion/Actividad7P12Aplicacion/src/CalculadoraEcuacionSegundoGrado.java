@@ -37,20 +37,24 @@ public class CalculadoraEcuacionSegundoGrado {
 
         if(2*a == 0) {
             System.out.println("La ecuacion no tiene solución.");
-            resultado[0] = x1;
-            resultado[1] = x2;
         }
         else {
             if((Math.pow(b, 2) * -4*a*c) < 0) {
                 System.out.println("La ecuacion no tiene solución.");
-                resultado[0] = x1;
-                resultado[1] = x2;
             }
             else {
-                
+                x1 = (-b + Math.sqrt(Math.pow(b,2) - 4*a*c)) / 2*a;
+                x2 = (-b - Math.sqrt(Math.pow(b,2) - 4*a*c)) / 2*a;
             }
         }
 
+        resultado[0] = x1;
+        resultado[1] = x2;
+
         return resultado;
+    }
+
+    public boolean esDiscriminantePositivo() {
+        return (Math.pow(b, 2) * -4*a*c) >= 0;
     }
 }
