@@ -28,7 +28,7 @@ public class Colores {
                 for(int i = 0; i < paleta.length; i++) {
                     random = (int) ((Math.random() * this.paleta.length));
 
-                    while (this.toString().contains(paleta[random])) {
+                    while (Arrays.toString(paleta).contains(this.paleta[random])) {
                         random = (int) ((Math.random() * this.paleta.length));
                     }
 
