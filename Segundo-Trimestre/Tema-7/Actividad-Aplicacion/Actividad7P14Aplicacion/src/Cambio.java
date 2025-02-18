@@ -47,6 +47,7 @@ public class Cambio {
         calcularCambio();
 
         if(cambio > 0) {
+            billetesYMonedas = new Object[0];
             resto = cambio;
 
             while (resto >= 500) {
