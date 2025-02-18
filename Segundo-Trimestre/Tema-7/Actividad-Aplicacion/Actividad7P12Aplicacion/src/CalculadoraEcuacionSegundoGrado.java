@@ -55,6 +55,6 @@ public class CalculadoraEcuacionSegundoGrado {
     }
 
     public boolean esDiscriminantePositivo() {
-        return (Math.pow(b, 2) * -4*a*c) >= 0;
+        return (Math.pow(b, 2) * -4*a*c) > 0;
     }
 }
