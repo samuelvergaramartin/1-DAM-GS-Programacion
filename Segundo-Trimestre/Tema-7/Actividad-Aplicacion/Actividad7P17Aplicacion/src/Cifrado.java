@@ -1,3 +1,7 @@
 public class Cifrado {
-    private String algo;
+    private static String cadena;
+
+    public static String cifrar(String texto) {
+        
+    }
 }
