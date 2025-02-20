@@ -11,4 +11,15 @@ public class Persona {
         this.edad = edad;
         this.altura = altura;
     };
+
+    public void mostrar() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+    }
+
+    @Override
+    public String toString() {
+        String cad = "Nombre: " + nombre + "\nEdad: " + edad;
+        return cad;
+    }
 }
