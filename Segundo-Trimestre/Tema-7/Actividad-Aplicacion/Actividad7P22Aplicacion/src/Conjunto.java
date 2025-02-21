@@ -120,6 +120,14 @@ public class Conjunto {
         return conjunto;
     }
 
+    public static Conjunto interseccion(Conjunto c1, Conjunto c2) {
+        Conjunto conjunto = new Conjunto();
+
+
+
+        return conjunto;
+    }
+
     @Override
     public String toString() {
         return conjunto.toString();
