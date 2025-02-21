@@ -1,5 +1,7 @@
+package superclases;
+
 public class Hora {
-    private int hora, minutos;
+    protected int hora, minutos;
 
     public Hora(int hora, int minutos) {
         if(!setHora(hora)) System.out.println("Error: Formato de hora incorrecto.");

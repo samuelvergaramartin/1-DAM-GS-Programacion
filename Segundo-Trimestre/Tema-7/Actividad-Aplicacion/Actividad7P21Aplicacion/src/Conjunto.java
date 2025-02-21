@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Conjunto {
     private Lista conjunto;
@@ -26,31 +27,46 @@ public class Conjunto {
     public boolean insertar(Conjunto otroConjunto) {
         boolean resultado = true;
         int indice = 0;
-        String cadena;
-        String elementos[];
+        final int elementosOtroConjunto[] = obtenerElementos(otroConjunto);
 
-        if (otroConjunto.numeroElementos() > 0) {
-            cadena = otroConjunto.toString();
-            elementos = cadena.split("");
-            if(otroConjunto.numeroElementos() > 1) {
-                System.arraycopy(elementos, 1, elementos, 0, elementos.length - 2);
-                elementos = Arrays.copyOf(elementos, elementos.length - 2);
-            }
-            else {
-                System.out.println("A");
-                /*elementos[0] = elementos[0].replace("[", "");
-                elementos[0] = elementos[0].replace("]", "");*/
-                System.out.println(elementos[0]);
-            }
-
-
-            /*while (indice < otroConjunto.numeroElementos() && resultado) {
-
-            }*/
-        }
-        else resultado = false;
+        //Terminar
 
         return false;
+    }
+
+    public boolean eliminarElemento(Integer elemento) {
+        //Terminar
+    }
+
+    public boolean pertenece(Integer elemento) {
+        final int elementos[] = obtenerElementos(this);
+        int indice = 0;
+        boolean resultado = false;
+
+        while (indice < elementos.length && !resultado) {
+            if(elementos[indice] == elemento) resultado = true;
+
+            indice++;
+        }
+    }
+
+    private int[] obtenerElementos(Conjunto conjunto) {
+        String cadena = conjunto.toString();
+        int elementos[] = new int[0];
+        final Scanner sc;
+
+        cadena = cadena.replace("[", "");
+        cadena = cadena.replace("]", "");
+        cadena = cadena.replace(",", "");
+
+        sc = new Scanner(cadena);
+
+        while (sc.hasNextInt()) {
+            elementos = Arrays.copyOf(elementos, elementos.length + 1);
+            elementos[elementos.length - 1] = sc.nextInt();
+        }
+
+        return elementos;
     }
 
     @Override

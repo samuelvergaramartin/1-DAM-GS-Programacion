@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Actividad8P1Resuelta/Actividad8P1Resuelta.iml" filepath="$PROJECT_DIR$/Actividad8P1Resuelta/Actividad8P1Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P2Resuelta/Actividad8P2Resuelta.iml" filepath="$PROJECT_DIR$/Actividad8P2Resuelta/Actividad8P2Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P3Resuelta/Actividad8P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad8P3Resuelta/Actividad8P3Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P4Resuelta/Actividad8P4Resuelta.iml" filepath="$PROJECT_DIR$/Actividad8P4Resuelta/Actividad8P4Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P5Resuelta/Actividad8P5Resuelta.iml" filepath="$PROJECT_DIR$/Actividad8P5Resuelta/Actividad8P5Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
     </modules>
   </component>
