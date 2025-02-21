@@ -96,6 +96,30 @@ public class Conjunto {
         System.out.println(this);
     }
 
+    public static boolean incluido(Conjunto c1, Conjunto c2) {
+        int elementosC1[] = c1.obtenerElementos(c1);
+        int contador = elementosC1.length, indice = 0;
+        boolean resultado = contador == 0;
+
+        while (indice < elementosC1.length && !resultado) {
+            if(c2.pertenece(elementosC1[indice])) contador--;
+
+            resultado = contador == 0;
+            indice++;
+        }
+
+        return resultado;
+    }
+
+    public static Conjunto union(Conjunto c1, Conjunto c2) {
+        Conjunto conjunto = new Conjunto();
+
+        conjunto.insertar(c1);
+        conjunto.insertar(c2);
+
+        return conjunto;
+    }
+
     @Override
     public String toString() {
         return conjunto.toString();
