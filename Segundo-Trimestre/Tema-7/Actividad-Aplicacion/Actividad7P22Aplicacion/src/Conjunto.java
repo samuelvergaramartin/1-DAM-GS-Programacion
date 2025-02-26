@@ -112,7 +112,7 @@ public class Conjunto {
     }
 
     public static Conjunto union(Conjunto c1, Conjunto c2) {
-        Conjunto conjunto = new Conjunto();
+        final Conjunto conjunto = new Conjunto();
 
         conjunto.insertar(c1);
         conjunto.insertar(c2);
@@ -121,9 +121,23 @@ public class Conjunto {
     }
 
     public static Conjunto interseccion(Conjunto c1, Conjunto c2) {
-        Conjunto conjunto = new Conjunto();
+        final Conjunto conjunto = new Conjunto();
+        final int elementosConjunto1[] = c1.obtenerElementos(c1);
 
+        for(Integer e : elementosConjunto1) {
+            if(c2.pertenece(e)) conjunto.insertar(e);
+        }
 
+        return conjunto;
+    }
+
+    public static Conjunto diferencia(Conjunto c1, Conjunto c2) {
+        final Conjunto conjunto = new Conjunto();
+        final int elementosConjunto1[] = c1.obtenerElementos(c1);
+
+        for(Integer e : elementosConjunto1) {
+            if(!c2.pertenece(e)) conjunto.insertar(e);
+        }
 
         return conjunto;
     }

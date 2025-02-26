@@ -12,5 +12,8 @@ public class Main {
         c2.insertar(4);
 
         System.out.println(Conjunto.incluido(c1, c2));
+        Conjunto.union(c1, c2).muestra();
+        Conjunto.interseccion(c1, c2).muestra();
+        Conjunto.diferencia(c1, c2).muestra();
     }
 }
