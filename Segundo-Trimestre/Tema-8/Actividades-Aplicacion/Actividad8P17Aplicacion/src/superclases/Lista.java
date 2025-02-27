@@ -74,8 +74,6 @@ public class Lista {
         return resultado;
     }
 
-    public void actualizarDireccionMemoria() {};
-
     @Override
     public boolean equals(Object obj) {
         if(!(obj instanceof Lista)) return false;

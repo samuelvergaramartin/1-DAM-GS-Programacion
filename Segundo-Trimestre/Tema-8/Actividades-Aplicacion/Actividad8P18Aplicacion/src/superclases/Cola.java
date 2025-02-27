@@ -1,15 +1,9 @@
 package superclases;
 
 public class Cola extends Lista{
-    protected Integer[] lista;
-
-    public Cola() {
-        actualizarDireccionMemoria();
-    }
 
     public void encolar(Integer elemento) {
         insertarAlFinal(elemento);
-        actualizarDireccionMemoria();
     }
 
     public Integer desencolar() {
@@ -18,7 +12,6 @@ public class Cola extends Lista{
         if(lista.length > 0) {
             elemento = lista[0];
             eliminarPorIndice(0);
-            actualizarDireccionMemoria();
         }
 
         return elemento;
@@ -26,10 +19,5 @@ public class Cola extends Lista{
 
     public boolean estaVacia() {
         return lista.length == 0;
-    }
-
-    @Override
-    public void actualizarDireccionMemoria() {
-        lista = super.lista;
     }
 }

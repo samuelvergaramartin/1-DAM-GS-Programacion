@@ -5,6 +5,7 @@ public class Main {
         ColaDoble coladoble = new ColaDoble();
 
         System.out.println(coladoble);
+        System.out.println(coladoble.estaVacia());
         coladoble.encolar(1);
         System.out.println(coladoble);
         coladoble.encolar(2);
@@ -15,5 +16,6 @@ public class Main {
         System.out.println(coladoble);
         System.out.println(coladoble.desencolarFinal());
         System.out.println(coladoble);
+        System.out.println(coladoble.estaVacia());
     }
 }

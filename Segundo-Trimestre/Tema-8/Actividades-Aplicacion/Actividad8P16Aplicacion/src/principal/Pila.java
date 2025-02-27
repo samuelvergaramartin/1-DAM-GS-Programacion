@@ -3,7 +3,6 @@ package principal;
 import superclases.Lista;
 
 public class Pila extends Lista {
-    private Integer lista[] = super.lista;
 
     public void apilar(Integer elemento) {
         insertarAlPrincipio(elemento);
