@@ -38,9 +38,62 @@ public class Tiempo {
         int h = horas, m = minutos, s = segundos;
 
         s+=t.segundos;
-        if (s > 60)
+        if (s > 59) {
+            m++;
+            s-=60;
+        }
+        m+=t.minutos;
+        if(m > 59) {
+            h++;
+            m-=60;
+        }
+        h+=t.horas;
+
+        setHoras(h);
+        setMinutos(m);
+        setSegundos(s);
     }
 
+    public void resta(Tiempo t) {
+        int h = horas, m = minutos, s = segundos;
+
+        s-=t.segundos;
+        if(s < 0) {
+            m--;
+            s*=-1;
+        }
+        m-=t.minutos;
+        if(m < 0) {
+            h--;
+            m*=-1;
+        }
+        h-=t.horas;
+
+        System.out.println(h);
+        System.out.println(m);
+        System.out.println(s);
+    }
+    //1h 23m 17s - 0h 45m 8s = 0h 22m 9s - MAL
+
+    public void testResta(Tiempo t) {
+        int h = horas, m = minutos, s = segundos;
+
+        s-=t.segundos;
+        if (s < 59) {
+            m--;
+            s+=60;
+        }
+        m-=t.minutos;
+        if(m < 59) {
+            h--;
+            m+=60;
+        }
+        h-=t.horas;
+
+        System.out.println(h);
+        System.out.println(m);
+        System.out.println(s);
+    }
     @Override
     public String toString() {
         return horas + "h " + minutos + "m " + segundos + "s";
