@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P10RefuerzoAp2/Actividad8P10RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P10RefuerzoAp2/Actividad8P10RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad8P1RefuerzoAp2/Actividad8P1RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P1RefuerzoAp2/Actividad8P1RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad8P2RefuerzoAp2/Actividad8P2RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P2RefuerzoAp2/Actividad8P2RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad8P3RefuerzoAp2/Actividad8P3RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P3RefuerzoAp2/Actividad8P3RefuerzoAp2.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Actividad8P6RefuerzoAp2/Actividad8P6RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P6RefuerzoAp2/Actividad8P6RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad8P7RefuerzoAp2/Actividad8P7RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P7RefuerzoAp2/Actividad8P7RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad8P8RefuerzoAp2/Actividad8P8RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P8RefuerzoAp2/Actividad8P8RefuerzoAp2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad8P9RefuerzoAp2/Actividad8P9RefuerzoAp2.iml" filepath="$PROJECT_DIR$/Actividad8P9RefuerzoAp2/Actividad8P9RefuerzoAp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" />
     </modules>
   </component>
