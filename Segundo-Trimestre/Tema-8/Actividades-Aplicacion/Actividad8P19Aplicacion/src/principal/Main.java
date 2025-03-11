@@ -5,7 +5,7 @@ import superclases.Lista;
 public class Main {
     public static void main(String[] args) {
         Conjunto conjunto = new Conjunto();
-        Lista lista = new Lista();
+        //Lista lista = new Lista();
 
         System.out.println(conjunto);
         conjunto.insertarAlFinal(1);
@@ -17,11 +17,11 @@ public class Main {
         conjunto.insertarAlPrincipio(3);
         System.out.println(conjunto);
 
-        lista.insertarAlFinal(4);
-        lista.insertarAlFinal(5);
-        System.out.println(lista);
-        conjunto.insertarAlFinalOtraLista(lista);
+        //lista.insertarAlFinal(4);
+        //lista.insertarAlFinal(5);
+        //System.out.println(lista);
+        //conjunto.insertarAlFinalOtraLista(lista);
         System.out.println(conjunto);
-        conjunto.insertarAlFinalOtraLista(lista);
+        //conjunto.insertarAlFinalOtraLista(lista);
     }
 }
