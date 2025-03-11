@@ -5,17 +5,7 @@ import superclases.Poligono;
 public class Rectangulo extends Poligono {
 
     public Rectangulo(double base, double altura) {
-        if(base <= 0) {
-            System.out.println("La base debe ser mayor que 0.");
-            super.base = 1;
-        }
-        else super.base = base;
-
-        if(altura <= 0) {
-            System.out.println("La altura debe ser mayor que 0.");
-            super.altura = 1;
-        }
-        else super.altura = altura;
+        super(base, altura);
     }
 
     @Override
