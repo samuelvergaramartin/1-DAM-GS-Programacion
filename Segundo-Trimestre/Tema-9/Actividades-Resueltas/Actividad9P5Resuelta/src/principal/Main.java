@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Integer n;
         Cola cola = new Cola() {
             Lista lista = new Lista();
 
@@ -46,8 +47,11 @@ public class Main {
 
         System.out.println("Desencolando numeros...");
 
-        while (cola.cima() != null) {
-            System.out.println(cola.desencolar());
+        n = cola.desencolar();
+
+        while (n != null) {
+            System.out.println(n);
+            n = cola.desencolar();
         }
     }
 }
