@@ -6,33 +6,33 @@ import interfaces.Pila;
 import java.util.Arrays;
 
 public class Lista implements Cola, Pila {
-    private Object lista[];
+    private Integer lista[];
 
     public Lista() {
-        lista = new Object[0];
+        lista = new Integer[0];
     }
 
     public int obtenerNumeroElementos() {
         return lista.length;
     }
 
-    public void insertarAlFinal(Object obj) {
+    public void insertarAlFinal(int numero) {
         lista = Arrays.copyOf(lista, lista.length + 1);
-        lista[lista.length - 1] = obj;
+        lista[lista.length - 1] = numero;
     }
 
-    public void insertarAlPrincipio(Object obj) {
+    public void insertarAlPrincipio(int numero) {
         lista = Arrays.copyOf(lista, lista.length + 1);
         System.arraycopy(lista, 0, lista, 1, lista.length - 1);
-        lista[0] = obj;
+        lista[0] = numero;
     }
 
-    public void insertarPorIndice(Object obj, int indice) {
+    public void insertarPorIndice(int numero, int indice) {
         if(indice < 0 || indice > lista.length - 1) System.out.println("Error: El indice introducido no existe");
         else {
             lista = Arrays.copyOf(lista, lista.length + 1);
             System.arraycopy(lista, indice, lista, indice + 1, lista.length - indice - 1);
-            lista[indice] = obj;
+            lista[indice] = numero;
         }
     }
 
@@ -44,8 +44,8 @@ public class Lista implements Cola, Pila {
         }
     }
 
-    public Object obtenerElementoPorIndice(int indice) {
-        Object resultado = null;
+    public Integer obtenerNumeroPorIndice(int indice) {
+        Integer resultado = null;
 
         if(indice < 0 || indice > lista.length - 1) System.out.println("Error: El indice introducido no existe");
         else {
@@ -57,16 +57,16 @@ public class Lista implements Cola, Pila {
 
     public void insertarAlFinalOtraLista(Lista lista) {
         for (int i = 0; i < lista.obtenerNumeroElementos(); i++) {
-            insertarAlFinal(lista.obtenerElementoPorIndice(i));
+            insertarAlFinal(lista.obtenerNumeroPorIndice(i));
         }
     }
 
-    public int obtenerIndicePrimeraOcurrencia(Object obj) {
+    public int obtenerIndicePrimeraOcurrencia(int numero) {
         int resultado = -1, indice = 0;
         boolean encontrado = false;
 
         while (indice < lista.length && !encontrado) {
-            if(lista[indice].equals(obj)) {
+            if(lista[indice] == numero) {
                 encontrado = true;
                 resultado = indice;
             }
@@ -87,13 +87,13 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public void encolar(Object elemento) {
+    public void encolar(Integer elemento) {
         insertarAlFinal(elemento);
     }
 
     @Override
-    public Object desencolar() {
-        Object elemento = null;
+    public Integer desencolar() {
+        Integer elemento = null;
 
         if(lista.length > 0) {
             elemento = lista[0];
@@ -104,8 +104,8 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public Object cima() {
-        Object elemento = null;
+    public Integer cima() {
+        Integer elemento = null;
 
         if(lista.length > 0) elemento = lista[0];
 
@@ -113,13 +113,13 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public void apilar(Object elemento) {
+    public void apilar(Integer elemento) {
         insertarAlPrincipio(elemento);
     }
 
     @Override
-    public Object desapilar() {
-        Object elemento = null;
+    public Integer desapilar() {
+        Integer elemento = null;
 
         if(lista.length > 0) {
             elemento = lista[0];
