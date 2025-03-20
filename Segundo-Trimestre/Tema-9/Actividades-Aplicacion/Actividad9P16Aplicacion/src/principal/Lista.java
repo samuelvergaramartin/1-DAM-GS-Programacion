@@ -6,33 +6,33 @@ import interfaces.Pila;
 import java.util.Arrays;
 
 public class Lista implements Cola, Pila {
-    private String lista[];
+    private Object lista[];
 
     public Lista() {
-        lista = new String[0];
+        lista = new Object[0];
     }
 
     public int obtenerNumeroElementos() {
         return lista.length;
     }
 
-    public void insertarAlFinal(String cad) {
+    public void insertarAlFinal(Object obj) {
         lista = Arrays.copyOf(lista, lista.length + 1);
-        lista[lista.length - 1] = cad;
+        lista[lista.length - 1] = obj;
     }
 
-    public void insertarAlPrincipio(String cad) {
+    public void insertarAlPrincipio(Object obj) {
         lista = Arrays.copyOf(lista, lista.length + 1);
         System.arraycopy(lista, 0, lista, 1, lista.length - 1);
-        lista[0] = cad;
+        lista[0] = obj;
     }
 
-    public void insertarPorIndice(String cad, int indice) {
+    public void insertarPorIndice(Object obj, int indice) {
         if(indice < 0 || indice > lista.length - 1) System.out.println("Error: El indice introducido no existe");
         else {
             lista = Arrays.copyOf(lista, lista.length + 1);
             System.arraycopy(lista, indice, lista, indice + 1, lista.length - indice - 1);
-            lista[indice] = cad;
+            lista[indice] = obj;
         }
     }
 
@@ -44,8 +44,8 @@ public class Lista implements Cola, Pila {
         }
     }
 
-    public String obtenerElementoPorIndice(int indice) {
-        String resultado = null;
+    public Object obtenerElementoPorIndice(int indice) {
+        Object resultado = null;
 
         if(indice < 0 || indice > lista.length - 1) System.out.println("Error: El indice introducido no existe");
         else {
@@ -61,12 +61,12 @@ public class Lista implements Cola, Pila {
         }
     }
 
-    public int obtenerIndicePrimeraOcurrencia(String cad) {
+    public int obtenerIndicePrimeraOcurrencia(Object obj) {
         int resultado = -1, indice = 0;
         boolean encontrado = false;
 
         while (indice < lista.length && !encontrado) {
-            if(lista[indice].equals(cad)) {
+            if(lista[indice].equals(obj)) {
                 encontrado = true;
                 resultado = indice;
             }
@@ -87,13 +87,13 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public void encolar(String elemento) {
+    public void encolar(Object elemento) {
         insertarAlFinal(elemento);
     }
 
     @Override
-    public String desencolar() {
-        String elemento = null;
+    public Object desencolar() {
+        Object elemento = null;
 
         if(lista.length > 0) {
             elemento = lista[0];
@@ -104,8 +104,8 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public String cima() {
-        String elemento = null;
+    public Object cima() {
+        Object elemento = null;
 
         if(lista.length > 0) elemento = lista[0];
 
@@ -113,13 +113,13 @@ public class Lista implements Cola, Pila {
     }
 
     @Override
-    public void apilar(String elemento) {
+    public void apilar(Object elemento) {
         insertarAlPrincipio(elemento);
     }
 
     @Override
-    public String desapilar() {
-        String elemento = null;
+    public Object desapilar() {
+        Object elemento = null;
 
         if(lista.length > 0) {
             elemento = lista[0];
