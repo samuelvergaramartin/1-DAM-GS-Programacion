@@ -1,4 +1,3 @@
-import principal.Socio;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -19,7 +18,9 @@ public class Main {
 
         System.out.println("Array de socios ordenador por edad de menor a mayor");
 
-        Arrays.sort(socios, c);
+
+        Arrays.sort(socios);
+        //Arrays.sort(socios, c);
 
         System.out.println(Arrays.toString(socios));
     }
