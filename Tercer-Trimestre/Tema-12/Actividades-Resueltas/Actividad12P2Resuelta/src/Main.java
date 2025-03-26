@@ -9,6 +9,9 @@ public class Main {
         System.out.println(contenedor);
         contenedor.insertarAlPrincipio(3);
         System.out.println(contenedor);
+        System.out.println("Ordenando array...");
+        contenedor.ordenar();
+        System.out.println(contenedor);
         System.out.println(contenedor.extraerDelFinal());
         System.out.println(contenedor);
         System.out.println(contenedor.extraerDelPrincipio());

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P1Resuelta/Actividad12P1Resuelta.iml" filepath="$PROJECT_DIR$/Actividad12P1Resuelta/Actividad12P1Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P2Resuelta/Actividad12P2Resuelta.iml" filepath="$PROJECT_DIR$/Actividad12P2Resuelta/Actividad12P2Resuelta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P3Resuelta/Actividad12P3Resuelta.iml" filepath="$PROJECT_DIR$/Actividad12P3Resuelta/Actividad12P3Resuelta.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Resueltas.iml" />
     </modules>
   </component>

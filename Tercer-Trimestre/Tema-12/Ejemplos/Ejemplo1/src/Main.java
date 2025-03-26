@@ -3,19 +3,18 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        Cliente clientes[] = {
-            new Cliente("123", "Hector"),
-            new Cliente("543", "Manolo"),
-            new Cliente("234", "Estefania")
-        };
+        Integer numeros[] = {1,2,null,3,null};
 
-        System.out.println(Arrays.toString(clientes));
-        Arrays.sort(clientes);
-        System.out.println("ORDENADO");
-        System.out.println(Arrays.toString(clientes));
+        System.out.println(numNulos(numeros));
+    }
 
-        Comparator<Cliente> ordenNatural = Comparator.naturalOrder();
+    private static <E> int numNulos(E[] array) {
+        int nulos = 0;
 
-        Arrays.sort(clientes, ordenNatural.reversed());
+        for(E e : array) {
+            if(e == null) nulos++;
+        }
+
+        return nulos;
     }
 }

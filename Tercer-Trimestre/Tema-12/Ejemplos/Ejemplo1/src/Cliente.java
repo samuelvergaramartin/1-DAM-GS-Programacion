@@ -1,4 +1,4 @@
-public class Cliente implements Comparable<Cliente>{
+public class Cliente implements Comparable<Cliente> {
     String dni, nombre;
 
     public Cliente(String dni, String nombre) {

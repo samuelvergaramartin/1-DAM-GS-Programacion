@@ -1,4 +1,4 @@
-public class Contenedor<T> {
+public class Contenedor<T extends Comparable> {
     private T objeto;
 
     public void guardar(T nuevo) {
