@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Contenedor <T extends Comparable<T>> {
+public class Contenedor<T extends Comparable <T>> implements Pila <T>, Cola<T> {
     T lista[];
 
     public Contenedor(T[] lista) {
@@ -49,5 +49,34 @@ public class Contenedor <T extends Comparable<T>> {
     @Override
     public String toString() {
         return Arrays.toString(lista);
+    }
+
+    @Override
+    public void apilar(T elemento) {
+        insertarAlPrincipio(elemento);
+    }
+
+    @Override
+    public T desapilar() {
+        return extraerDelPrincipio();
+    }
+
+    @Override
+    public void encolar(T elemento) {
+        insertarAlFinal(elemento);
+    }
+
+    @Override
+    public T desencolar() {
+        return extraerDelPrincipio();
+    }
+
+    @Override
+    public T cima() {
+        T elemento = null;
+
+        if(lista.length > 0) elemento = lista[0];
+
+        return elemento;
     }
 }

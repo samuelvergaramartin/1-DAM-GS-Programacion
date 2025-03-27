@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Contenedor<Integer> pila = new Contenedor<>(new Integer[0]);
+        Contenedor<Integer> cola = new Contenedor<>(new Integer[0]);
         Scanner sc = new Scanner(System.in);
         int num;
 
@@ -10,15 +10,15 @@ public class Main {
         num = sc.nextInt();
 
         while (num != -1) {
-            pila.apilar(num);
+            cola.encolar(num);
             System.out.print("Introduzca un número: ");
             num = sc.nextInt();
         }
 
-        System.out.println("Desapilando...");
+        System.out.println("Desencolando...");
 
-        while (pila.cima() != null) {
-            System.out.println(pila.desapilar());
+        while (cola.cima() != null) {
+            System.out.println(cola.desencolar());
         }
     }
 }
