@@ -43,12 +43,10 @@ public class Main {
         double resultado = 0;
         Iterator<Double> it;
 
-        if(!lista.isEmpty()) {
-            it = lista.iterator();
+        it = lista.iterator();
 
-            while (it.hasNext()) {
-                resultado+= it.next();
-            }
+        while (it.hasNext()) {
+            resultado+= it.next();
         }
 
         return resultado;
@@ -57,13 +55,11 @@ public class Main {
     private static void eliminarTodosFueraDeRango(List<Double> lista) {
         Iterator<Double> it;
 
-        if(!lista.isEmpty()) {
-            it = lista.iterator();
+        it = lista.iterator();
 
-            while (it.hasNext()) {
-                Double elemento = it.next();
-                if(elemento < -10 || elemento > 10) it.remove();
-            }
+        while (it.hasNext()) {
+            Double elemento = it.next();
+            if(elemento < -10 || elemento > 10) it.remove();
         }
     }
 }
