@@ -24,12 +24,12 @@ public class Main {
             if(e%2 == 0) System.out.println(e);
         }
 
-        System.out.println("Eliminando los impares...");
+        System.out.println("Eliminando los multiplos de 3...");
 
         it = numeros.iterator();
 
         while (it.hasNext()) {
-            if(it.next() %2 != 0) it.remove();
+            if(it.next() %3 == 0) it.remove();
         }
 
         System.out.println("Mostrando Colección resultante...");
