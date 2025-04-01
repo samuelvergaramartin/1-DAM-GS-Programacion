@@ -1,5 +1,4 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
@@ -11,7 +10,7 @@ public class Cliente implements Comparable<Cliente>{
     public Cliente(String DNI, String nombre, String FECHA_NACIMIENTO) {
         this.DNI = DNI;
         setNombre(nombre);
-        DateTimeFormatter f = DateTimeFormatter.ofPattern("dd-MM-yy");
+        DateTimeFormatter f = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         this.FECHA_NACIMIENTO = LocalDate.parse(FECHA_NACIMIENTO, f);
     }
 
@@ -42,6 +41,6 @@ public class Cliente implements Comparable<Cliente>{
 
     @Override
     public int compareTo(Cliente o) {
-        return 0;
+        return DNI.compareTo(o.DNI);
     }
 }
