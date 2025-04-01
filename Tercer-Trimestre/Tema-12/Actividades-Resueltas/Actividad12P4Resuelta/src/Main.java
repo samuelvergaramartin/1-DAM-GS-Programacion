@@ -19,6 +19,8 @@ public class Main {
             num = sc.nextInt();
         }
 
+        System.out.println(numeros);
+
         System.out.println("Mostrando valores pares...");
         for(Integer e : numeros) {
             if(e%2 == 0) System.out.println(e);
