@@ -19,7 +19,7 @@ public class Sorteo <T> {
             lista = new ArrayList<>(conjunto);
             Collections.shuffle(lista);
             resultado = new LinkedHashSet<>();
-            for(int i = 0; i < conjunto.size(); i++) {
+            for(int i = 0; i < numPremiados; i++) {
                 resultado.add(lista.get(i));
             }
         }
