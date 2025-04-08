@@ -1,11 +1,10 @@
 import java.time.format.DateTimeParseException;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         Map<String, Socio> socios = new TreeMap<>();
+        ComparaAntiguedades comparaAntiguedades = new ComparaAntiguedades();
         Scanner sc;
         int opcion;
 
@@ -59,16 +58,50 @@ public class Main {
                 }
                 case 3: {
                     String apodo, nombre, fechaIngreso;
+                    sc = new Scanner(System.in);
+
+                    System.out.print("Introduzca el apodo del socio: ");
+                    apodo = sc.nextLine();
+
+                    if(!socios.containsKey(apodo)) {
+                        System.out.println("Error: El socio introducido no existe.");
+                    }
+                    else {
+                        System.out.print("Introduzca el nuevo nombre del socio: ");
+                        nombre = sc.nextLine();
+
+                        System.out.print("Introduzca la nueva fecha de ingreso del socio: ");
+                        fechaIngreso = sc.nextLine();
+
+                        try {
+                            socios.get(apodo).setFechaIngreso(fechaIngreso);
+                            socios.get(apodo).setNombre(nombre);
+
+                            System.out.println("Se ha modificado correctmente al socio.");
+                        }
+                        catch (DateTimeParseException ex) {
+                            System.out.println("Error: El formato de la fecha introducida no es válido.");
+                        }
+                    }
 
                     break;
                 }
                 case 4: {
+                    System.out.println(socios);
                     break;
                 }
                 case 5: {
+                    List<Socio> listado = new ArrayList<>(socios.values());
+                    Collections.sort(listado, comparaAntiguedades);
+                    System.out.println(listado);
                     break;
                 }
                 case 6: {
+                    List<Socio> listado = new ArrayList<>();
+
+                    for(Socio e : socios.values()) {
+                        
+                    }
                     break;
                 }
                 case 7: {
