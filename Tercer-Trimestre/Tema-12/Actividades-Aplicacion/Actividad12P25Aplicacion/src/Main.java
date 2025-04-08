@@ -17,7 +17,7 @@ public class Main {
                     sc = new Scanner(System.in);
 
                     do {
-                        System.out.print("Introduzca el apodo del nuevo socio");
+                        System.out.print("Introduzca el apodo del nuevo socio: ");
                         apodo = sc.nextLine();
                     }
                     while (socios.containsKey(apodo));
@@ -98,10 +98,23 @@ public class Main {
                 }
                 case 6: {
                     List<Socio> listado = new ArrayList<>();
+                    sc = new Scanner(System.in);
+                    int anio;
+
+                    do {
+                        System.out.print("Introduzca el año máximo: ");
+                        anio = sc.nextInt();
+                    }
+                    while (anio <= 0);
 
                     for(Socio e : socios.values()) {
-                        
+                        if(Integer.parseInt(e.getFechaIngreso().split("-")[2]) < anio) {
+                            listado.add(e);
+                        }
                     }
+
+                    System.out.println(listado);
+
                     break;
                 }
                 case 7: {
