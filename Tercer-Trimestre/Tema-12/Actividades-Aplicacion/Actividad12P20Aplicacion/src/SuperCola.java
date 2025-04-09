@@ -39,7 +39,7 @@ public class SuperCola <T> {
         return elemento;
     }
 
-    public T desencolar() {
+    private T desencolar() {
         T elemento = null;
 
         if(!cola.isEmpty()) {
@@ -75,6 +75,6 @@ public class SuperCola <T> {
 
     @Override
     public String toString() {
-        return cola.toString();
+        return cola.toString() + "\n\n" + cola2.toString();
     }
 }
