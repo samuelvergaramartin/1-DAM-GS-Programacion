@@ -1,11 +1,11 @@
-import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Set<String> nombres = new LinkedHashSet<>();
+        Set<String> nombres = new TreeSet<>();
         String nombre;
 
         System.out.print("Introduce un nombre: ");
