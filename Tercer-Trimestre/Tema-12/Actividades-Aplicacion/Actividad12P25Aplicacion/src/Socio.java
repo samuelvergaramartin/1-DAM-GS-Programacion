@@ -31,7 +31,7 @@ public class Socio implements Comparable<Socio> {
     }
 
     public int antiguedad() {
-        return (int) LocalDate.now().until(fechaIngreso, ChronoUnit.YEARS);
+        return (int) fechaIngreso.until(LocalDate.now(), ChronoUnit.YEARS);
     }
 
     @Override

@@ -109,7 +109,7 @@ public class Main {
 
                     for(Socio e : socios.values()) {
                         if(Integer.parseInt(e.getFechaIngreso().split("-")[2]) < anio) {
-                            listado.add(e);
+                            listado.add(e);//Me podria haber ahorrado el listado, simplemente haciendo sout de cada socio
                         }
                     }
 
