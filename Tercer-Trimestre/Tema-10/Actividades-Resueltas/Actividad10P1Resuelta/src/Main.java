@@ -16,6 +16,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         try {
+            System.out.print("Introduce un número entero: ");
             num = sc.nextInt();
         }
         catch (InputMismatchException e) {
