@@ -1,39 +1,36 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         BufferedReader in = null;
-        Scanner sc;
         String linea;
-        double suma = 0;
+        int num, res = 0;
+        Scanner sc;
 
         try {
-            in = new BufferedReader(new FileReader("Actividad10P5Resuelta/NumerosReales.txt"));
+            in = new BufferedReader(new FileReader("Ejemplo3/numeros.txt"));
 
             linea = in.readLine();
-
             while (linea != null) {
                 sc = new Scanner(linea);
-                sc.useLocale(Locale.US);
-
-                if (sc.hasNextDouble()) {
-                    suma += sc.nextDouble();
+                if(sc.hasNextInt()) {
+                    num = sc.nextInt();
+                    System.out.println(num);
+                    res += num;
                 }
 
                 linea = in.readLine();
             }
-
-            System.out.println("Total: " + suma);
+            System.out.println(res);
         }
-        catch (IOException e) {
-            System.out.println(e);
+        catch (IOException ex) {
+            System.out.println(ex);
         }
         finally {
-            if(in != null) {
+            if (in != null) {
                 try {
                     in.close();
                 } catch (IOException e) {

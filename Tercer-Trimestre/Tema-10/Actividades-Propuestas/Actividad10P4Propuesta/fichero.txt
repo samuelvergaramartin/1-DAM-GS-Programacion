@@ -1,0 +1,4 @@
+Hola mundo
+me llamo Samuel
+y esto se esta guardando en
+un ficherito
