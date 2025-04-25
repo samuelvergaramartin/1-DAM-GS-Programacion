@@ -1,44 +1,56 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        BufferedReader in = null;
-        BufferedReader out = null;
-        Scanner sc;
-        String contenidoFichero, fichero;
-
-        System.out.print("Introduzca el nombre del fichero: ");
-
-
-        try {
-
-        }
-        catch (IOException ex) {
-            System.out.println(ex);
-        }
-    }
-
-    private static String pedirFichero() {
-        String fichero = null;
+        String fichero, contenidoFichero;
         Scanner sc = new Scanner(System.in);
-        BufferedReader in;
 
         do {
             System.out.print("Introduzca el nombre del fichero: ");
             fichero = sc.nextLine();
 
-            try {
-                in = new BufferedReader(new FileReader(fichero));
-            }
+            try (BufferedReader in = new BufferedReader(new FileReader("Actividad10P8Resuelta/" + fichero))){}
             catch (IOException ex) {
                 fichero = null;
             }
+
         }
         while (fichero == null);
 
-        return fichero;
+        contenidoFichero = obtenerContenidoFichero(fichero);
+        copiarFichero(contenidoFichero, fichero);
+        System.out.println("Fichero copiado satisfactoriamente.");
+    }
+
+    private static String obtenerContenidoFichero(String fichero) {
+        String linea, contenidoFichero = "";
+
+        try (BufferedReader in = new BufferedReader(new FileReader("Actividad10P8Resuelta/" + fichero))){
+            linea = in.readLine();
+
+            while (linea != null) {
+                contenidoFichero += linea + "\n";
+                linea = in.readLine();
+            }
+        }
+        catch (IOException ex) {
+            System.out.println(ex);
+        }
+
+        return contenidoFichero;
+    }
+
+    private static void copiarFichero(String contenidoFichero, String fichero) {
+        Scanner sc;
+        try(BufferedWriter out = new BufferedWriter(new FileWriter("Actividad10P8Resuelta/copia_de_" + fichero))) {
+            sc = new Scanner(contenidoFichero);
+            while (sc.hasNextLine()) {
+                out.write(sc.nextLine() + "\n");
+            }
+        }
+        catch (IOException ex) {
+            System.out.println(ex);
+        }
     }
 }
