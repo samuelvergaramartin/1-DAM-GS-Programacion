@@ -6,8 +6,7 @@ public class Main {
         Persona p = new Persona("Samuel", "Vergara", 21);
 
         /*try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("Ejemplo5/persona.dat"))) {
-            out.writeObject(p);
-            System.out.println("Se ha escrito la persona en el archivo.");
+            System.out.println("Se ha creado el archivo");
         }
         catch (IOException e) {
             System.out.println(e);
