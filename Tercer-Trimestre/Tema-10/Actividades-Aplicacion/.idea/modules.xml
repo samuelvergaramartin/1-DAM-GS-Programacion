@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Actividad10P11Aplicacion/Actividad10P11Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad10P11Aplicacion/Actividad10P11Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad10P12Aplicacion/Actividad10P12Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad10P12Aplicacion/Actividad10P12Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad10P13Aplicacion/Actividad10P13Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad10P13Aplicacion/Actividad10P13Aplicacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad10P14Aplicacion/Actividad10P14Aplicacion.iml" filepath="$PROJECT_DIR$/Actividad10P14Aplicacion/Actividad10P14Aplicacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Aplicacion.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Aplicacion.iml" />
     </modules>
   </component>
