@@ -28,7 +28,7 @@ public class Ejercito {
         return EJERCITO.get(i);
     }
 
-    
+
 
     @Override
     public String toString() {
