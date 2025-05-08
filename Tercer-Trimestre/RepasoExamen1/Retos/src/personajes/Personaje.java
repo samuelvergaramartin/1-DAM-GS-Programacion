@@ -5,11 +5,13 @@ public abstract class Personaje {
     protected final String CODIGO;
     protected int vida, posTablero, alcanceAtaque, fuerzaAtaque, rangoMovimiento;
 
-    public Personaje(char letra, int vida, int posTablero, int alcanceAtaque, int fuerzaAtaque, int rangoMovimiento) {
-        CODIGO = String.valueOf(letra + (++numPersonajesCreados));
+    public Personaje(String letra, int vida, int posTablero, int alcanceAtaque, int fuerzaAtaque, int rangoMovimiento) {
+        CODIGO = letra + (++numPersonajesCreados);
         setVida(vida);
         setPosTablero(posTablero);
-
+        setAlcanceAtaque(alcanceAtaque);
+        setFuerzaAtaque(fuerzaAtaque);
+        setRangoMovimiento(rangoMovimiento);
     }
 
     public void setVida(int vida) {
@@ -39,6 +41,18 @@ public abstract class Personaje {
         if(puntos > 0) setVida(vida - puntos);
     }
 
+    public int getVida() {
+        return vida;
+    }
+
+    public int getPosTablero() {
+        return posTablero;
+    }
+
+    public String getCODIGO() {
+        return CODIGO;
+    }
+
     private int establecerValorPositivo(int valor) {
         int resultado = 0;
 
@@ -49,6 +63,6 @@ public abstract class Personaje {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " {\n\tCódigo: " + CODIGO + "\n\tVida: " + vida + "\n\tPosición: " + posTablero + "\n\t Alcance Ataque: " + alcanceAtaque + "\n\tFuerza ataque: " + fuerzaAtaque + "\n\tRango Movimiento: " + rangoMovimiento + "\n}\n";
+        return getClass().getSimpleName() + " {\n\tCódigo: " + CODIGO + "\n\tVida: " + vida + "\n\tPosición: " + posTablero + "\n\t Alcance Ataque: " + alcanceAtaque + "\n\tFuerza ataque: " + fuerzaAtaque + "\n\tRango Movimiento: " + rangoMovimiento + "\n}";
     }
 }

@@ -4,8 +4,8 @@ public class Mago extends Personaje {
 
     private int nivelMagia = 50;
 
-    public Mago(char letra, int vida, int posTablero, int alcanceAtaque, int fuerzaAtaque, int rangoMovimiento) {
-        super('M', 10, posTablero, 5, 3, 3);
+    public Mago(int posTablero) {
+        super("M", 10, posTablero, 5, 3, 3);
     }
 
     public int getNivelMagia() {
@@ -14,7 +14,7 @@ public class Mago extends Personaje {
 
     @Override
     public int atacar() {
-        return 0;
+        return fuerzaAtaque;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package principal;
 
 import ejercito.Ejercito;
+import tablero.Tablero1D;
 
 import java.util.Scanner;
 
@@ -9,6 +10,7 @@ public class Main {
         Scanner sc;
         int opcion;
         Ejercito ejercito1 = new Ejercito(), ejercito2 = new Ejercito();
+        Tablero1D tablero = new Tablero1D();
 
         do {
             opcion = menu();
@@ -20,7 +22,8 @@ public class Main {
                     break;
                 }
                 case 2: {
-                    //Opcion 2
+                    tablero.colocarPersonajes(ejercito1, ejercito2);
+                    System.out.println(tablero);
                     break;
                 }
                 case 3: {
