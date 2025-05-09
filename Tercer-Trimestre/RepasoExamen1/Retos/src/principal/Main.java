@@ -88,7 +88,7 @@ public class Main {
             System.out.print("Indica el número de casillas [-" + rangoMov + "..." + rangoMov + "]: ");
             numCasillas = sc.nextInt();
             System.out.println("posTablero: " + posTablero + " numCasillas: " + numCasillas);
-        }
+        }//CORREGIR FALLOS!
         while ((numCasillas < -rangoMov || numCasillas > rangoMov) || ((posTablero + numCasillas) < 0 || (posTablero + numCasillas) > 19));
 
         posTablero = personaje.getPosTablero() + numCasillas;
