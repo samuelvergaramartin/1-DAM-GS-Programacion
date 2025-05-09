@@ -53,6 +53,14 @@ public abstract class Personaje {
         return CODIGO;
     }
 
+    public int getRangoMovimiento() {
+        return rangoMovimiento;
+    }
+
+    public int getAlcanceAtaque() {
+        return alcanceAtaque;
+    }
+
     private int establecerValorPositivo(int valor) {
         int resultado = 0;
 

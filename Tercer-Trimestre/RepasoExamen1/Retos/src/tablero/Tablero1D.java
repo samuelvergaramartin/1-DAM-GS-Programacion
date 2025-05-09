@@ -30,6 +30,14 @@ public class Tablero1D {
         }
     }
 
+    public String obtenerPersonaje(int pos) {
+        String resultado = "    ";
+        if(pos >= 0 && pos <= tablero.length - 1) {
+            resultado = tablero[pos];
+        }
+        return resultado;
+    }
+
     public void eliminarPersonaje(int pos) {
         tablero[pos] = "    ";
     }

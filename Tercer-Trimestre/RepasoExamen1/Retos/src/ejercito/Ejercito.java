@@ -19,6 +19,10 @@ public class Ejercito {
         crearEjercito(numIntegrantes);
     }
 
+    public int getNUMERO_EJERCITO() {
+        return NUMERO_EJERCITO;
+    }
+
     public int tamanyoEjercito() {
         return EJERCITO.size();
     }
@@ -29,6 +33,22 @@ public class Ejercito {
 
     public Personaje obtenerPersonaje(int i) {
         return EJERCITO.get(i);
+    }
+
+    public Personaje obtenerPersonajePorPosicionTablero(int posTablero) {
+        Personaje personaje = null;
+        int i = 0;
+
+        while (i < EJERCITO.size() && personaje == null) {
+            if(EJERCITO.get(i).getPosTablero() == posTablero) personaje = EJERCITO.get(i);
+            i++;
+        }
+
+        return personaje;
+    }
+
+    public int obtenerIndicePersonaje(Personaje p) {
+        return EJERCITO.indexOf(p);
     }
 
     public boolean ejercitoDerrotado() {
