@@ -8,7 +8,7 @@ public class Main {
         String contenidoCarta = "";
 
         try(BufferedReader in = new BufferedReader(new FileReader("Actividad10P14Aplicacion/carta.txt"))) {
-            
+
         }
         catch (IOException ex) {
             System.out.println(ex.getMessage());
