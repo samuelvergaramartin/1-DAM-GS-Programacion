@@ -8,10 +8,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc;
         int opcion;
         Ejercito ejercito1 = new Ejercito(), ejercito2 = new Ejercito();
-        Tablero1D tablero = new Tablero1D();
+        Tablero1D tablero = new Tablero1D(ejercito1, ejercito2);
         boolean finDeLaPartida = false;
 
         do {
@@ -24,7 +23,6 @@ public class Main {
                     break;
                 }
                 case 2: {
-                    prepararTablero(ejercito1, ejercito2, tablero);
                     System.out.println(tablero);
                     break;
                 }
@@ -75,21 +73,20 @@ public class Main {
         Personaje personaje = e1.obtenerPersonaje(0), enemigo;
         String nombrePersonaje = personaje.getCODIGO();
 
-        prepararTablero(e1, e2, tablero);
         System.out.println(tablero);
 
         System.out.println("Ataca " + nombrePersonaje);
 
         rangoMov = personaje.getRangoMovimiento();
         rangoAtaque = personaje.getAlcanceAtaque();
-        posTablero = personaje.getPosTablero() - 1;
+        posTablero = personaje.getPosTablero();
 
         do {
             System.out.print("Indica el número de casillas [-" + rangoMov + "..." + rangoMov + "]: ");
             numCasillas = sc.nextInt();
-            System.out.println("posTablero: " + posTablero + " numCasillas: " + numCasillas);
-        }//CORREGIR FALLOS!
-        while ((numCasillas < -rangoMov || numCasillas > rangoMov) || ((posTablero + numCasillas) < 0 || (posTablero + numCasillas) > 19));
+        }
+        while ((numCasillas < -rangoMov || numCasillas > rangoMov) || ((posTablero + numCasillas) < 1 || (posTablero + numCasillas) > 20) ||
+        !tablero.obtenerPersonaje(posTablero + numCasillas).equals("    "));
 
         posTablero = personaje.getPosTablero() + numCasillas;
         tablero.moverPersonaje(posTablero, personaje);
@@ -113,13 +110,5 @@ public class Main {
         System.out.println(tablero);
 
         return e1.ejercitoDerrotado() || e2.ejercitoDerrotado();
-    }
-
-    /*Esta función prepara el tablero de la forma correcta para evitar que se muestren de forma errónea los ejercitos en el tablero.
-    Ya que, si por ejemplo se le pasara el ejercito 2 en el parametro del ejercito 1, esta función lo colocará bien porque cojerá
-    el código del ejercito y los colocará en el orden correcto en el metodo 'colocarPersonajes'*/
-    private static void prepararTablero(Ejercito e1, Ejercito e2, Tablero1D tablero) {
-        if(e1.getNUMERO_EJERCITO() == 1) tablero.colocarPersonajes(e1, e2);
-        else tablero.colocarPersonajes(e2, e1);
     }
 }

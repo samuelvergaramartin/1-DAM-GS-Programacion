@@ -2,8 +2,6 @@ package tablero;
 
 import ejercito.Ejercito;
 import personajes.Personaje;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Tablero1D {
@@ -21,36 +19,36 @@ public class Tablero1D {
 
     public void moverPersonaje(int pos, Personaje enemigo) {
         int posAnterior;
-        if(pos >= 0 && pos <= tablero.length - 1) {
-            if(tablero[pos].equals("    ")) {
+        if(pos > 0 && pos <= tablero.length) {
+            if(tablero[pos - 1].equals("    ")) {
                 posAnterior = enemigo.getPosTablero();
-                tablero[pos] = tablero[posAnterior];
-                tablero[posAnterior] = "    ";
+                tablero[pos - 1] = tablero[posAnterior - 1];
+                tablero[posAnterior - 1] = "    ";
             }
         }
     }
 
     public String obtenerPersonaje(int pos) {
         String resultado = "    ";
-        if(pos >= 0 && pos <= tablero.length - 1) {
-            resultado = tablero[pos];
+        if(pos > 0 && pos <= tablero.length) {
+            resultado = tablero[pos - 1];
         }
         return resultado;
     }
 
     public void eliminarPersonaje(int pos) {
-        tablero[pos] = "    ";
+        tablero[pos - 1] = "    ";
     }
 
     public void colocarPersonajes(Ejercito ejercito1, Ejercito ejercito2) {
         Personaje personaje;
         for(int i = 0; i < ejercito1.tamanyoEjercito(); i++) {
             personaje = ejercito1.obtenerPersonaje(i);
-            tablero[personaje.getPosTablero()] = "E1" + personaje.getCODIGO();
+            tablero[personaje.getPosTablero() - 1] = "E1" + personaje.getCODIGO();
         }
         for(int i = 0; i < ejercito2.tamanyoEjercito(); i++) {
             personaje = ejercito2.obtenerPersonaje(i);
-            tablero[personaje.getPosTablero()] = "E2" + personaje.getCODIGO();
+            tablero[personaje.getPosTablero() - 1] = "E2" + personaje.getCODIGO();
         }
     }
 

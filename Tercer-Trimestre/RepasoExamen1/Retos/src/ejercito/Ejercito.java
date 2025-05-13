@@ -19,10 +19,6 @@ public class Ejercito {
         crearEjercito(numIntegrantes);
     }
 
-    public int getNUMERO_EJERCITO() {
-        return NUMERO_EJERCITO;
-    }
-
     public int tamanyoEjercito() {
         return EJERCITO.size();
     }
