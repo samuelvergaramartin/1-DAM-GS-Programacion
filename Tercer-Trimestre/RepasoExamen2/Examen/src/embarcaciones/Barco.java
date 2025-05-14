@@ -3,14 +3,14 @@ package embarcaciones;
 public abstract class Barco {
     private static int contadorBarcos = 0;
     final String CODIGO;
-    int longitud;
+    double longitud;
 
-    public Barco(String iniciales, int longitud) {
+    public Barco(String iniciales, double longitud) {
         CODIGO = iniciales + (++contadorBarcos);
         setLongitud(longitud);
     }
 
-    public void setLongitud(int longitud) {
+    public void setLongitud(double longitud) {
         if(longitud > 0) longitud = this.longitud;
         else longitud = 1;
     }
