@@ -15,6 +15,6 @@ public class Acorazado extends Barco {
 
     @Override
     public String toString() {
-        return super.toString().replace("Barco", getClass().getSimpleName()) + "\r\tNúmero de cañones: " + numCaniones + "\n}";
+        return super.toString() + "\r\tNúmero de cañones: " + numCaniones + "\n}";
     }
 }

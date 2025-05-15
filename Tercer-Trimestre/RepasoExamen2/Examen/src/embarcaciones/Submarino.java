@@ -12,6 +12,6 @@ public class Submarino extends Barco {
 
     @Override
     public String toString() {
-        return super.toString().replace("Barco", getClass().getSimpleName()) + "\r\tLongitud Periscopio: " + obtenerLongitudPeriscopio() + "\n}";
+        return super.toString() + "\r\tLongitud Periscopio: " + obtenerLongitudPeriscopio() + "\n}";
     }
 }

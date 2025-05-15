@@ -61,11 +61,30 @@ public class Main {
                     break;
                 }
                 case 2: {
-                    //Opcion 2
+                    String codigo;
+                    boolean eliminado;
+                    sc = new Scanner(System.in);
+
+                    System.out.print("Introduce el código del barco a eliminar: ");
+                    codigo = sc.nextLine();
+
+                    eliminado = flota.eliminarBarco(flota.obtenerBarco(codigo));
+
+                    if(eliminado) System.out.println("Se ha eliminado el barco correctamente.");
+                    else System.out.println("Error: No se ha podido eliminar el barco. No existe en la flota.");
+
                     break;
                 }
                 case 3: {
-                    //Opcion 3
+                    System.out.println("Mostrando acorazados por orden de insercción");
+                    for(Barco barco : flota.arrayBarcos()) {
+                        if(barco instanceof Acorazado) System.out.println(barco);
+                    }
+                    break;
+                }
+                case 4: {
+                    System.out.println("Motrando todos los barcos de la flota");
+                    System.out.println(flota);
                     break;
                 }
                 case 0: {
@@ -87,6 +106,7 @@ public class Main {
                 1- Insertar barco
                 2- Eliminar barco
                 3- Mostrar acorazados por orden de insercción
+                4- Mostrar todos los barcos de la flota
                 0- Salir
                 """;
         Scanner sc = new Scanner(System.in);

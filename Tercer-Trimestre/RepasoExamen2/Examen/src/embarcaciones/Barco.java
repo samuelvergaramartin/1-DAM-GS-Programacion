@@ -10,9 +10,13 @@ public abstract class Barco {
         setLongitud(longitud);
     }
 
+    public String getCODIGO() {
+        return CODIGO;
+    }
+
     public void setLongitud(double longitud) {
-        if(longitud > 0) longitud = this.longitud;
-        else longitud = 1;
+        if(longitud > 0) this.longitud = longitud;
+        else this.longitud = 1;
     }
 
     @Override
