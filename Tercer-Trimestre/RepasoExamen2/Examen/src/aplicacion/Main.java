@@ -28,7 +28,7 @@ public class Main {
 
                     break;
                 }
-                case 2: {
+                case 2: {//CORREGIR! NO TE LO ELIMINA!
                     boolean eliminado = eliminarBarco(flota);
 
                     if(eliminado) System.out.println("Se ha eliminado el barco correctamente.");
