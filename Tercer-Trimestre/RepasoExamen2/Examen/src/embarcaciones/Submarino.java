@@ -2,6 +2,8 @@ package embarcaciones;
 
 public class Submarino extends Barco {
 
+
+
     public Submarino(double longitud) {
         super("Sub-", longitud);
     }

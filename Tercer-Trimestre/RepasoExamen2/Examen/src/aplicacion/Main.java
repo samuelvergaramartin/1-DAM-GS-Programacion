@@ -18,57 +18,18 @@ public class Main {
             opcion = menu();
             switch (opcion) {
                 case 1: {
-                    sc = new Scanner(System.in);
-                    sc.useLocale(Locale.US);
-                    String tipoBarco;
-                    double longitud;
-                    boolean insertado;
-                    Barco barco;
-
-                    do {
-                        System.out.print("Introduzca el tipo de barco (Acorazado o Submarino): ");
-                        tipoBarco = sc.nextLine();
-                    }
-                    while (!tipoBarco.equalsIgnoreCase("acorazado") && !tipoBarco.equalsIgnoreCase("submarino"));
-
-                    do {
-                        System.out.print("Introduzca la longitud del barco: ");
-                        longitud = sc.nextDouble();
-                    }
-                    while (longitud < 0);
-
-                    if(tipoBarco.equalsIgnoreCase("acorazado")) {
-                        int numCaniones;
-                        do {
-                            System.out.print("Introduzca el número de cañones: ");
-                            numCaniones = sc.nextInt();
-                        }
-                        while (numCaniones < 0);
-                        barco = new Acorazado(longitud, numCaniones);
-                        insertado = flota.insertarBarco(barco);
-                    }
-                    else {
-                        barco = new Submarino(longitud);
-                        insertado = flota.insertarBarco(barco);
-                    }
+                    boolean insertado = insertarBarco(flota);
 
                     if(insertado) {
                         System.out.println("Se ha insertado el barco correctamente");
-                        System.out.println(barco);
+                        System.out.println(flota.arrayBarcos()[flota.numeroElementos() - 1]);
                     }
                     else System.out.println("Error: No se ha podido insertar el barco.");
 
                     break;
                 }
                 case 2: {
-                    String codigo;
-                    boolean eliminado;
-                    sc = new Scanner(System.in);
-
-                    System.out.print("Introduce el código del barco a eliminar: ");
-                    codigo = sc.nextLine();
-
-                    eliminado = flota.eliminarBarco(flota.obtenerBarco(codigo));
+                    boolean eliminado = eliminarBarco(flota);
 
                     if(eliminado) System.out.println("Se ha eliminado el barco correctamente.");
                     else System.out.println("Error: No se ha podido eliminar el barco. No existe en la flota.");
@@ -115,5 +76,47 @@ public class Main {
         System.out.print("Seleccione una opción: ");
 
         return sc.nextInt();
+    }
+
+    private static boolean insertarBarco(Flota flota) {
+        return flota.insertarBarco(pedirDatosBarco(flota));
+    }
+
+    private static boolean eliminarBarco(Flota flota) {
+       return flota.eliminarBarco(pedirDatosBarco(flota));
+    }
+
+    private static Barco pedirDatosBarco(Flota flota) {
+        Scanner sc = new Scanner(System.in);
+        String tipoBarco;
+        double longitud;
+        Barco barco;
+
+        sc.useLocale(Locale.US);
+
+        do {
+            System.out.print("Introduzca el tipo de barco (Acorazado o Submarino): ");
+            tipoBarco = sc.nextLine();
+        }
+        while (!tipoBarco.equalsIgnoreCase("acorazado") && !tipoBarco.equalsIgnoreCase("submarino"));
+
+        do {
+            System.out.print("Introduzca la longitud del barco: ");
+            longitud = sc.nextDouble();
+        }
+        while (longitud < 0);
+
+        if(tipoBarco.equalsIgnoreCase("acorazado")) {
+            int numCaniones;
+            do {
+                System.out.print("Introduzca el número de cañones: ");
+                numCaniones = sc.nextInt();
+            }
+            while (numCaniones < 0);
+            barco = new Acorazado(longitud, numCaniones);
+        }
+        else barco = new Submarino(longitud);
+
+        return barco;
     }
 }
