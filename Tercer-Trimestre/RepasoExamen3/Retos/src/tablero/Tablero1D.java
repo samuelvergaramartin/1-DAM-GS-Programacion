@@ -6,18 +6,22 @@ import java.util.Arrays;
 
 @Deprecated
 public class Tablero1D {
+    @Deprecated
     private String[] tablero;
 
+    @Deprecated
     public Tablero1D() {
         tablero = new String[20];
         Arrays.fill(tablero, "    ");
     }
 
+    @Deprecated
     public Tablero1D(Ejercito ejercito1, Ejercito ejercito2) {
         this();
         colocarPersonajes(ejercito1, ejercito2);
     }
 
+    @Deprecated
     public void moverPersonaje(int pos, Personaje enemigo) {
         int posAnterior;
         if(pos > 0 && pos <= tablero.length) {
@@ -29,6 +33,7 @@ public class Tablero1D {
         }
     }
 
+    @Deprecated
     public String obtenerPersonaje(int pos) {
         String resultado = "    ";
         if(pos > 0 && pos <= tablero.length) {
@@ -37,10 +42,12 @@ public class Tablero1D {
         return resultado;
     }
 
+    @Deprecated
     public void eliminarPersonaje(int pos) {
         tablero[pos - 1] = "    ";
     }
 
+    @Deprecated
     public void colocarPersonajes(Ejercito ejercito1, Ejercito ejercito2) {
         Personaje personaje;
         for(int i = 0; i < ejercito1.tamanyoEjercito(); i++) {
@@ -53,6 +60,7 @@ public class Tablero1D {
         }
     }
 
+    @Deprecated
     @Override
     public String toString() {
         return Arrays.toString(tablero);
