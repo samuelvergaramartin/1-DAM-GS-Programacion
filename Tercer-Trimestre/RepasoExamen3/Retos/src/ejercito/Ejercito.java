@@ -11,12 +11,12 @@ public class Ejercito {
     private final int NUMERO_EJERCITO;
     private final ArrayList<Personaje> EJERCITO;
 
-    public Ejercito() {
+    public Ejercito(int posMin, int posMax) {
         int numIntegrantes = (int) ((Math.random() * 4) + 3); //Generamos el numero de integrantes que será entre 3 y 6;
         NUMERO_EJERCITO = ++ejercitosCreados;
         EJERCITO = new ArrayList<>();
 
-        crearEjercito(numIntegrantes);
+        crearEjercito(numIntegrantes, posMin, posMax);
     }
 
     public int tamanyoEjercito() {
@@ -92,17 +92,23 @@ public class Ejercito {
     }
 
     private void crearEjercito(int numIntegrantes, int posMin, int posMax) {
-        int alea, pos, tamanioTablero = 2*(posMax - posMin + 1);
+        int alea, pos, posiciones2D[];
 
         for(int i = 0; i < numIntegrantes; i++) {
             alea = (int) ((Math.random() * 2) + 1);
             pos = (int) ((Math.random() * (posMax - posMin)) + posMin);
-        }
 
-        
+            while (posicionOcupada(pos)) {
+                pos = (int) ((Math.random() * (posMax - posMin)) + posMin);
+            }
+
+            posiciones2D = obtenerCoordenadasPersonaje(pos, posMin, posMax);
+
+            if(alea == 1) EJERCITO.add(new Guerrero(posiciones2D[0], posiciones2D[1]));
+            else EJERCITO.add(new Mago(posiciones2D[0], posiciones2D[1]));
+        }
     }
 
-    @Deprecated
     private boolean posicionOcupada(int pos) {
         boolean resultado = false;
         int i = 0;
@@ -125,6 +131,21 @@ public class Ejercito {
         }
 
         return resultado;
+    }
+
+    private int[] obtenerCoordenadasPersonaje(int pos1D, int posMinTablero1D, int posMaxTablero1D) {
+        int coordenadas[] = new int[2], x, y, longitudTablero = 2 * (posMaxTablero1D - posMinTablero1D + 1);
+        y = (pos1D / (int) Math.sqrt(longitudTablero)); x = pos1D - (y * (int) Math.sqrt(longitudTablero));
+        /*
+        *  - - -
+        *  - - -
+        *  - - -
+        * */
+
+        coordenadas[0] = x;
+        coordenadas[1] = y;
+
+        return coordenadas;
     }
 
     @Override

@@ -10,7 +10,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int opcion;
+        Ejercito ejercito1 = new Ejercito(0, 9), ejercito2 = new Ejercito(10, 19);
+        Tablero2D tablero2 = new Tablero2D(ejercito1, ejercito2);
+
+        System.out.println(tablero2);
+        /*int opcion;
         //Ejercito ejercito1 = new Ejercito(), ejercito2 = new Ejercito();
 
         //Tablero1D tablero = new Tablero1D(ejercito1, ejercito2);
@@ -24,23 +28,7 @@ public class Main {
                 case 1: {
                     //System.out.println(ejercito1);
                     //System.out.println(ejercito2);
-                    String[][] test = new String[3][3];
 
-                    for(int i = 0; i < test.length; i++) {
-                        Arrays.fill(test[i], "    ");
-                    }
-
-                    for(int i = 0; i < test.length; i++) {
-                        System.out.println(Arrays.toString(test[i]));
-                    }
-
-                    int c = 0;
-
-                    for(int i = 0; i < test.length && c < 3; i++) {
-                        for(int j = 0; j < test[i].length && c < 3; j++) {
-                            c++;
-                        }
-                    }
                     break;
                 }
                 case 2: {
@@ -78,7 +66,7 @@ public class Main {
             }
 
         }
-        while (opcion != 0 && !finDeLaPartida);
+        while (opcion != 0 && !finDeLaPartida);*/
 
         //if(ejercito1.ejercitoDerrotado()) System.out.println("El ejercito 2 ha derrotado al ejercito 1.");
         //else if(ejercito2.ejercitoDerrotado()) System.out.println("El ejercito 1 ha derrotado al ejercito 2.");
