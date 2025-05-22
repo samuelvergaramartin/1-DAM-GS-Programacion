@@ -10,9 +10,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Ejercito ejercito1 = new Ejercito(0, 9), ejercito2 = new Ejercito(10, 19);
+        Ejercito ejercito1 = new Ejercito(0, 9), ejercito2 = new Ejercito(0, 9);
         Tablero2D tablero2 = new Tablero2D(ejercito1, ejercito2);
 
+        System.out.println(ejercito1);
+        System.out.println(ejercito2);
         System.out.println(tablero2);
         /*int opcion;
         //Ejercito ejercito1 = new Ejercito(), ejercito2 = new Ejercito();

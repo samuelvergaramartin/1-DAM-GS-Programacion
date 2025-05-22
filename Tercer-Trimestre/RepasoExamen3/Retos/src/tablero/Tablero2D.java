@@ -20,11 +20,14 @@ public class Tablero2D {
         Personaje personaje;
         for(int i = 0; i < ejercito1.tamanyoEjercito(); i++) {
             personaje = ejercito1.obtenerPersonaje(i);
+            //System.out.println("-----------------");
+            //System.out.println("X: " + personaje.getPosTableroX() + ", Y: " + personaje.getPosTableroY());
+            //System.out.println("-----------------");
             tablero[personaje.getPosTableroY()][personaje.getPosTableroX()] = "E1" + personaje.getCODIGO();
         }
         for(int i = 0; i < ejercito2.tamanyoEjercito(); i++) {
             personaje = ejercito2.obtenerPersonaje(i);
-            tablero[personaje.getPosTableroY()][personaje.getPosTableroX()] = "E2" + personaje.getCODIGO();
+            //tablero[personaje.getPosTableroY()][personaje.getPosTableroX()] = "E2" + personaje.getCODIGO();
         }
     }
 

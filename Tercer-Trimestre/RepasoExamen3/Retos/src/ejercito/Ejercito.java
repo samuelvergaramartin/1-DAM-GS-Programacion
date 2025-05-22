@@ -134,8 +134,9 @@ public class Ejercito {
     }
 
     private int[] obtenerCoordenadasPersonaje(int pos1D, int posMinTablero1D, int posMaxTablero1D) {
-        int coordenadas[] = new int[2], x, y, longitudTablero = 2 * (posMaxTablero1D - posMinTablero1D + 1);
+        int coordenadas[] = new int[2], x, y, longitudTablero = (posMaxTablero1D - posMinTablero1D + 1);
         y = (pos1D / (int) Math.sqrt(longitudTablero)); x = pos1D - (y * (int) Math.sqrt(longitudTablero));
+        //System.out.println("Longitud del tablero: " + longitudTablero);
         /*
         *  - - -
         *  - - -
