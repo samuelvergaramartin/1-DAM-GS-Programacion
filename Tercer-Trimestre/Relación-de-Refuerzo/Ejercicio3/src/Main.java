@@ -11,7 +11,7 @@ public class Main {
                     boolean introducido = introducirTemperatura();
 
                     if(introducido) System.out.println("Temperatura introducida correctamente.");
-                    else System.out.println("Error: La temperatura introducida no debe estar repetida en el mes introducido.");
+                    else System.out.println("Error: La temperatura introducida debe ser mayor que la establecida para dicho mes.");
 
                     break;
                 }
@@ -24,30 +24,18 @@ public class Main {
                     break;
                 }
                 case 3: {
-                    boolean eliminadas = eliminarTemperaturasMes();
-
-                    if(eliminadas) System.out.println("Temperaturas del mes eliminadas correctamente.");
-                    else System.out.println("Error: El mes introducido no estaba registrado o no tenía temperaturas registradas.");
-
+                    System.out.println(TemperaturasMaximas.meses());
                     break;
                 }
                 case 4: {
-                    System.out.println(Temperaturas.meses());
-                    break;
-                }
-                case 5: {
                     System.out.println(mesesTemperaturaMayor());
                     break;
                 }
+                case 5: {
+                    System.out.println(TemperaturasMaximas.datosTemperaturas());
+                    break;
+                }
                 case 6: {
-                    System.out.println(Temperaturas.datosTemperaturas());
-                    break;
-                }
-                case 7: {
-                    System.out.println(Temperaturas.datosTemperaturasOrdenadas());
-                    break;
-                }
-                case 8: {
                     System.out.println("Saliendo del programa...");
                     break;
                 }
@@ -57,19 +45,18 @@ public class Main {
                 }
             }
         }
-        while (opcion != 8);
+        while(opcion != 6);
     }
+
     private static int menu() {
         final String MENU = """
                 Menu
                 1- Introducir temperatura
                 2- Eliminar mes
-                3- Eliminar temperaturas mes
-                4- Meses introducidos
-                5- Meses temperatura superior
-                6- Mostrar datos
-                7- Mostrar datos temperaturas ordenadas
-                8- Salir
+                3- Meses introducidos
+                4- Meses temperatura mayor
+                5- Datos temperaturas
+                6- Salir
                 """;
         Scanner sc = new Scanner(System.in);
 
@@ -81,26 +68,19 @@ public class Main {
 
     private static boolean introducirTemperatura() {
         Scanner sc = new Scanner(System.in);
-        String mes;
+        Meses mes;
         int temperatura;
 
-        System.out.print("Introduce el mes: ");
-        mes = sc.nextLine();
+        mes = pedirMes();
 
         System.out.print("Introduce la temperatura: ");
         temperatura = sc.nextInt();
 
-        return Temperaturas.introducirTemperatura(mes, temperatura);
+        return TemperaturasMaximas.introducirTemperatura(mes, temperatura);
     }
 
     private static boolean eliminarMes() {
-        Scanner sc = new Scanner(System.in);
-        String mes;
-
-        System.out.print("Introduce el mes: ");
-        mes = sc.nextLine();
-
-        return Temperaturas.eliminarMes(mes);
+        return TemperaturasMaximas.eliminarMes(pedirMes());
     }
 
     private static String mesesTemperaturaMayor() {
@@ -110,16 +90,27 @@ public class Main {
         System.out.print("Introduce la temperatura: ");
         temperatura = sc.nextInt();
 
-        return Temperaturas.mesesTemperaturaMayor(temperatura).toString();
+        return TemperaturasMaximas.mesesTemperaturaMayor(temperatura).toString();
     }
 
-    private static boolean eliminarTemperaturasMes() {
+    private static Meses pedirMes() {
         Scanner sc = new Scanner(System.in);
         String mes;
+        boolean valido = false;
 
-        System.out.print("Introduce el mes: ");
-        mes = sc.nextLine();
+        do {
+            System.out.print("Introduce el mes: ");
+            mes = sc.nextLine();
 
-        return Temperaturas.eliminarTemperaturasMes(mes);
+            switch(mes.toUpperCase()) {
+                case "ENERO","FEBRERO","MARZO","ABRIL","MAYO","JUNIO","JULIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE": {
+                    valido = true;
+                    break;
+                }
+            }
+        }
+        while(!valido);
+
+        return Meses.valueOf(mes.toUpperCase());
     }
 }
