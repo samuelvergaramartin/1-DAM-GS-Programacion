@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P1Refuerzo/Actividad12P1Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P1Refuerzo/Actividad12P1Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P2Refuerzo/Actividad12P2Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P2Refuerzo/Actividad12P2Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P34Ampliacion/Actividad12P34Ampliacion.iml" filepath="$PROJECT_DIR$/Actividad12P34Ampliacion/Actividad12P34Ampliacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P37Ampliacion/Actividad12P37Ampliacion.iml" filepath="$PROJECT_DIR$/Actividad12P37Ampliacion/Actividad12P37Ampliacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P3Refuerzo/Actividad12P3Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P3Refuerzo/Actividad12P3Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" />
     </modules>
   </component>
