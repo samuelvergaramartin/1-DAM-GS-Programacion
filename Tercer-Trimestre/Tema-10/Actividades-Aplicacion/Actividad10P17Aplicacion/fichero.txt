@@ -1,0 +1,6 @@
+Hola mundo
+este es un fichero
+de x
+lineas
+y no se que más
+fin del fichero
