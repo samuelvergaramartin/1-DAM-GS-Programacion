@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,5 +26,15 @@ public class Agenda {
 
     public Contacto obtenerContacto(String telefono) {
         return contactos.get(telefono);
+    }
+
+    public String[] buscarPorNombre(String nombre) {
+        ArrayList<String> contactos = new ArrayList<>();
+
+        for(String n : this.contactos.keySet()) {
+            if(n.startsWith(nombre)) contactos.add(n);
+        }
+
+        return contactos.toArray(new String[0]);
     }
 }
