@@ -18,6 +18,10 @@ public class Contacto {
         return telefono;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Contacto)) return false;

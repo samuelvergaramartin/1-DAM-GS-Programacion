@@ -1,12 +1,10 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Agenda {
     private Map<String, Contacto> contactos;
 
     public Agenda() {
-        contactos = new HashMap<String, Contacto>();
+        contactos = new HashMap<>();
     }
 
     public boolean agregarContacto(Contacto contacto) {
@@ -20,19 +18,19 @@ public class Agenda {
         return agregado;
     }
 
-    public boolean eliminarContacto(String telefono) {
-        return contactos.remove(telefono) != null;
-    }
-
     public Contacto obtenerContacto(String telefono) {
         return contactos.get(telefono);
+    }
+
+    public Collection<Contacto> obtenerContactos() {
+        return contactos.values();
     }
 
     public String[] buscarPorNombre(String nombre) {
         ArrayList<String> contactos = new ArrayList<>();
 
         for(String n : this.contactos.keySet()) {
-            if(n.startsWith(nombre)) contactos.add(n);
+            if(this.contactos.get(n).getNombre().startsWith(nombre)) contactos.add(n);
         }
 
         return contactos.toArray(new String[0]);
