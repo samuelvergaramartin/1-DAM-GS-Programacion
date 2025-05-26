@@ -1,12 +1,14 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Map<String, String> diccionario = new HashMap<>();
         Scanner sc = new Scanner(System.in);
-        String palabraEs, palabraEn;
+        String palabraIntroducida, palabraEn;
+        int numAciertos = 0, numErrores = 0;
+        ArrayList<String> palabras = new ArrayList<>(), temp;
 
         diccionario.put("Hola", "Hello");
         diccionario.put("Adios", "Goodbye");
@@ -30,12 +32,22 @@ public class Main {
         diccionario.put("Volar", "To fly");
         diccionario.put("Amar", "To love");
 
-        System.out.print("Ingrese la palabra en Español: ");
-        palabraEs = sc.nextLine();
+        temp = new ArrayList<>(diccionario.keySet());
 
-        palabraEn = diccionario.get(palabraEs);
+        for (int i = 0; i < 5; i++) {
+            palabras.add(temp.get(i));
+        }
 
-        if (palabraEn == null) System.out.println("La palabra introducida no existe en el diccionario.");
-        else System.out.println(palabraEn);
+        for(String palabra : palabras) {
+            System.out.print(palabra + ": ");
+            palabraEn = diccionario.get(palabra);
+            palabraIntroducida = sc.nextLine();
+
+            if(palabraEn.equals(palabraIntroducida)) numAciertos++;
+            else numErrores++;
+        }
+
+        System.out.println("El numero de aciertos es: " + numAciertos);
+        System.out.println("El numero de errores es: " + numErrores);
     }
 }
