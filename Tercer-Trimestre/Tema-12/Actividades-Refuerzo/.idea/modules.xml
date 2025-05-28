@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P10Refuerzo/Actividad12P10Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P10Refuerzo/Actividad12P10Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P11Refuerzo/Actividad12P11Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P11Refuerzo/Actividad12P11Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P1Refuerzo/Actividad12P1Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P1Refuerzo/Actividad12P1Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P2Refuerzo/Actividad12P2Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P2Refuerzo/Actividad12P2Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P34Ampliacion/Actividad12P34Ampliacion.iml" filepath="$PROJECT_DIR$/Actividad12P34Ampliacion/Actividad12P34Ampliacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P37Ampliacion/Actividad12P37Ampliacion.iml" filepath="$PROJECT_DIR$/Actividad12P37Ampliacion/Actividad12P37Ampliacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Actividad12P3Refuerzo/Actividad12P3Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P3Refuerzo/Actividad12P3Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P4Refuerzo/Actividad12P4Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P4Refuerzo/Actividad12P4Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P5Refuerzo/Actividad12P5Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P5Refuerzo/Actividad12P5Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P6Refuerzo/Actividad12P6Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P6Refuerzo/Actividad12P6Refuerzo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actividad12P7Refuerzo/Actividad12P7Refuerzo.iml" filepath="$PROJECT_DIR$/Actividad12P7Refuerzo/Actividad12P7Refuerzo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" filepath="$PROJECT_DIR$/.idea/Actividades-Refuerzo.iml" />
     </modules>
   </component>
