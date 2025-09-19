@@ -5,7 +5,7 @@ Repositorio oficial de los ejercicios de 1 DAM de Samuel Vergara Martín del I.E
 ## Mensaje del autor
 
 Hola, soy Samuel, programador e informático, he decidido liberar todos los ejercicios que hice en 1 DAM (Primero de Desarrollo de Aplicaciones Multiplataforma) para que quien quiera aprender a programar en Java, tenga estos ejercicios como base.
-Pueden descargar el libro haciendo click [aquí](https://mega.nz/file/p6VEyLhb#-4Gc4OUTzaZyCOABLYDKUHVpIHitcQXYyAFFn_zTpJo), en dicho libro encontrarán el enunciado a los ejercicios y también la teoría, es super completo el libro. Espero que les sirva de ayuda.
+Pueden encontrar el libro [aquí](https://github.com/samuelvergaramartin/1-DAM-GS-Programacion/tree/main/Libro-Temario), en dicho libro encontrarán el enunciado a los ejercicios y también la teoría, es super completo el libro. Espero que les sirva de ayuda.
 
 ## Detalles importantes
 
